@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import { BuilderComponent } from '@builder.io/react';
+import { BuilderComponent, builder } from '@builder.io/react';
+
+builder.init("464eac5a0492435cb67f71783742bba3");
 
 // Your template populates your Gatsby pages with your Builder page content.
 function PageTemplate({ data }) {
