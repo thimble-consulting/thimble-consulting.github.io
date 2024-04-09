@@ -4,7 +4,7 @@ const IndexPage = () => {
   return (
     <>
       {/* Initial Empty Page */}
-      Hello World!
+      Hello World
     </>
   );
 };
