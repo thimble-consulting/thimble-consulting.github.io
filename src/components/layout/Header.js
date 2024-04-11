@@ -3,7 +3,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import Button from "../Button";
 
 const Header = () => (
-  <header className="sticky top-0 bg-white shadow">
+  <header className="sticky top-0 bg-white shadow z-10">
     <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
       <div className="flex flex-grow items-center font-serif font-black italic text-thimble lowercase text-4xl">
         Thimble

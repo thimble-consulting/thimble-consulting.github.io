@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "walden-green": "#183028",
         primary: {
           lighter: "#4b3f72",
           default: "#1f2041",
