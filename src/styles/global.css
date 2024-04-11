@@ -1,0 +1,9 @@
+@tailwind base;
+a {
+  @apply text-secondary;
+}
+a:hover {
+  @apply text-secondary-lighter;
+}
+@tailwind components;
+@tailwind utilities;
