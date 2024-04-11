@@ -8,6 +8,11 @@ module.exports = {
   plugins: [
     "gatsby-plugin-postcss",
     "gatsby-plugin-sitemap",
+    // Images Plugins
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, // Needed for dynamic images
+    // End of Images Plugins
     {
       resolve: `gatsby-omni-font-loader`,
       options: {
