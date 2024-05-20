@@ -1,9 +1,12 @@
 @tailwind base;
 a {
-  @apply text-secondary;
+  @apply text-weblink-blue;
 }
 a:hover {
-  @apply text-secondary-lighter;
+  @apply text-weblink-blue-darker;
+}
+a:visited {
+  @apply text-weblink-visited;
 }
 @tailwind components;
 @tailwind utilities;

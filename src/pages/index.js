@@ -1,237 +1,193 @@
 import React from "react";
 import Button from "../components/Button";
 import Card from "../components/Card";
-import CustomerCard from "../components/CustomerCard";
-import LabelText from "../components/LabelText";
+import PastClients from "../components/PastClients";
 import Layout from "../components/layout/Layout";
 import SplitSection from "../components/SplitSection";
-import StatsBox from "../components/StatsBox";
-import customerData from "../data/customer-data";
-import HeroImage from "../svg/HeroImage";
-import SvgCharts from "../svg/SvgCharts";
-import { StaticImage } from "gatsby-plugin-image";
+import SvgBusinessDiscussion from "../svg/SvgBusinessDiscussion";
+import SvgGrowth from "../svg/SvgGrowth";
+import SvgIdeaPresentation from "../svg/SvgIdeaPresentation";
+import SvgLateGrowth from "../svg/SvgLateGrowth";
 
 const Index = () => (
   <Layout>
-    <section className="pt-20 md:pt-40">
-      <div className="container mx-auto px-8 lg:flex">
-        <div className="text-center lg:text-left lg:w-1/2">
-          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
-            Scale, Adapt, Evolve
-          </h1>
-          <p className="text-xl lg:text-2xl mt-6 font-light">
-            At Thimble, we help clients implement adaptable technology solutions
-            that meet the evolving needs of growing businesses.
-          </p>
-          <p className="mt-8 md:mt-12">
-            <Button size="lg">Get Started</Button>
-          </p>
-          <p className="mt-4 text-gray-600">Sed fermentum felis ut cursu</p>
-        </div>
-        <div className="lg:w-1/2">
-          <HeroImage />
-        </div>
-      </div>
-    </section>
-    <section id="story" className="py-10 lg:py-20">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold mb-4">
-          What we do
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <Card className="place-content-center">
-            <p className="font-semibold text-xl">
-              Custom Software Solutions
+    <section className="flex flex-row pt-10 md:pt-20 lg:pt-36">
+      <div className="lg:w-1/2">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-serif leading-none">
+          Software for Start-Up, Scale-Up & Beyond
+        </h1>
+        <div className="flex flex-row mt-6 items-center">
+          <div className="">
+            <p className="text-xl font-light">
+              At Thimble, we help clients implement technology solutions that
+              adapt with the evolving needs of growth.
             </p>
-          </Card>
-          <Card className="place-content-center">
-            <p className="font-semibold text-xl">
-              Order Management Systems
-            </p>
-          </Card>
-          <Card className="place-content-center">
-            <p className="font-semibold text-xl">
-              Scaling around Shopify & BigCommerce
-            </p>
-          </Card>
-          <Card className="place-content-center">
-            <p className="font-semibold text-xl">
-              Finance & Accounting Retrofits?
-            </p>
-          </Card>
-          <Card className="place-content-center">
-            <p className="font-semibold text-xl">
-              ERP Integrations
-            </p>
-          </Card>
-          <Card className="place-content-center">
-            <p className="font-semibold text-xl">
-              Inventory Management Systems
-            </p>
-          </Card>
-          <Card className="place-content-center">
-            <p className="font-semibold text-xl">
-              Outgoing Logistics - 3PL Integrations
-            </p>
-          </Card>
-          <Card className="place-content-center">
-            <p className="font-semibold text-xl">
-              Retail Partnerships - EDI Integrations
-            </p>
-          </Card>
-          <Card className="place-content-center">
-            <p className="font-semibold text-xl">
-              DevOps - Infra-as-Code
-            </p>
-          </Card>
-          <Card className="place-content-center">
-            <p className="font-semibold text-xl">
-              Much more!
-            </p>
-          </Card>
-        </div>
-      </div>
-    </section>
-    <section id="story" className="py-10 lg:py-20">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold mb-4">
-          Trusted By
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-          <Card className="place-content-center">
-            <div class="bg-walden-green place-content-center">
-              <StaticImage
-                src="../images/client-logos/walden.svg"
-                alt="Walden Local"
-              />
+
+            <div className="my-8">
+              <Button size="lg">Get in touch</Button>
             </div>
-          </Card>
-          <Card className="place-content-center">
-            <StaticImage
-              src="../images/client-logos/glossier.svg"
-              alt="Glossier"
-            />
-          </Card>
-          <Card className="place-content-center">
-            <StaticImage
-              src="../images/client-logos/casper-logo.png"
-              alt="Casper"
-            />
-          </Card>
-          <Card className="place-content-center sm:hidden md:block">
-            <StaticImage
-              src="../images/client-logos/florence-logo.png"
-              alt="Florence"
-            />
-          </Card>
-          <Card className="place-content-center hidden lg:block">
-            <StaticImage
-              src="../images/client-logos/felcana-logo.png"
-              alt="Felcana"
-            />
-          </Card>
+          </div>
+          <div className="hidden sm:block md:hidden sm:w-9/12">
+            <SvgIdeaPresentation />
+          </div>
         </div>
+      </div>
+      <div className="hidden md:block md:w-9/12 md:pt-4 lg:pt-0 lg:-mt-4 lg:w-1/2">
+        <SvgIdeaPresentation />
       </div>
     </section>
-    <section id="story" className="py-10 lg:py-20">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold mb-4">
-          Another Section
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <Card className="place-content-center">
-            <p className="font-semibold text-xl">
-              Retail Partnerships - EDI Integrations
-            </p>
-            <p className="mt-4">
-              An enim nullam tempor gravida donec enim ipsum blandit porta justo
-              integer odio velna vitae auctor integer.
-            </p>
-          </Card>
-        </div>
-      </div>
+    <section id="methodology" className="pb-8">
+      <h2 className="text-3xl font-bold font-serif leading-none">
+        Our Approach
+      </h2>
+      <p className="text-xl mt-6 font-light">
+        Our team has 10+ years of experience solving complex problems for
+        tech-enabled businesses, from integrating off-the-shelf services to
+        maturing custom software solutions and everything in between.
+      </p>
+      <p className="text-xl mt-6 font-light">
+        Our mission is to help the tech behind everyday companies run their
+        business better.
+      </p>
+      <p className="text-xl mt-6 font-light">
+        We root our process in a deep understanding of clients’ business roadmap
+        and their product and business operations, incorporating this into a
+        pragmatic approach to their software & systems.
+      </p>
+      <p className="text-xl mt-6 font-light">
+        We bring our process onboard with clients by embedding our team within
+        existing tech teams and connecting end-to-end with our clients from
+        strategy to working hand-in-hand on implementation and delivery.
+      </p>
+    </section>
+    <section id="methodology" className="pb-8 lg:pb-0">
+      <h2 className="text-3xl font-bold font-serif leading-none">
+        Our Clients
+      </h2>
+      <p className="text-xl mt-6 font-light">
+        We work with growing tech-enabled businesses in every stage, from
+        start-up to IPO. Most recently we've mostly worked in D2C e-commerce,
+        but we've also worked on marketplace platforms and more. From this
+        breadth of experience, we've learned that our approach adapts to three
+        main phases of growth for companies:
+      </p>
     </section>
     <SplitSection
       id="services"
+      reverseOrder
       primarySlot={
-        <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Market Analysis
+        <div className="lg:pl-12 xl:pl-24">
+          <h3 className="text-3xl font-bold font-serif leading-tight">
+            Start-Up Foundations
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Our team of enthusiastic marketers will analyse and evaluate how
-            your company stacks against the closest competitors
+            With early-stage startups we focus on laying good technical
+            foundations to operate well, without over-engineering. We aim for
+            just enough tech to enable clients to continue working on
+            product-market fit and getting to scale-up.
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={
+        <div className="w-2/3 lg:w-full mx-auto">
+          <SvgBusinessDiscussion />
+        </div>
+      }
+    />
+    <SplitSection
+      primarySlot={
+        <div className="lg:pr-12 xl:pr-24">
+          <h3 className="text-3xl font-bold font-serif leading-tight">
+            Scale-Up Operations
+          </h3>
+          <p className="mt-8 text-xl font-light leading-relaxed">
+            With high-growth clients, we help put in place systems to scale
+            back-of-house operations, enabling clients continue to grow top-line
+            revenue with confidence they can continue to scale.
+          </p>
+        </div>
+      }
+      secondarySlot={
+        <div className="w-2/3 lg:w-full mx-auto">
+          <SvgGrowth />
+        </div>
+      }
     />
     <SplitSection
       reverseOrder
       primarySlot={
-        <div className="lg:pl-32 xl:pl-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Design And Plan Your Business Growth Steps
+        <div className="lg:pl-12 xl:pl-24">
+          <h3 className="text-3xl font-bold font-serif leading-tight">
+            Late-Growth & Pre-IPO
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Once the market analysis process is completed our staff will search
-            for opportunities that are in reach
+            We help late-growth clients demonstrate operational maturity through
+            systems for reliability and auditability. We work with clients on
+            data integrity across business systems tracking orders, revenue, and
+            financial data, as well as on ERP integrations.
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
-    />
-    <SplitSection
-      primarySlot={
-        <div className="lg:pr-32 xl:pr-48">
-          <h3 className="text-3xl font-semibold leading-tight">
-            Search For Performance Optimization
-          </h3>
-          <p className="mt-8 text-xl font-light leading-relaxed">
-            With all the information in place you will be presented with an
-            action plan that your company needs to follow
-          </p>
+      secondarySlot={
+        <div className="w-2/3 lg:w-full mx-auto">
+          <SvgLateGrowth />
         </div>
       }
-      secondarySlot={<SvgCharts />}
     />
-    <section id="stats" className="py-20 lg:pt-32">
-      <div className="container mx-auto text-center">
-        <LabelText className="text-gray-600">
-          Our customers get results
-        </LabelText>
-        <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
-          </div>
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
-          </div>
-          <div className="w-full sm:w-1/3">
-            <StatsBox primaryText="+100%" secondaryText="Stats Information" />
-          </div>
-        </div>
+    <section id="story" className="py-10 lg:py-20 text-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <Card className="place-content-center">
+          <p className="font-bold font-serif text-xl">
+            Custom Software Solutions
+          </p>
+        </Card>
+        <Card className="place-content-center">
+          <p className="font-bold font-serif text-xl">
+            Order Management Systems
+          </p>
+        </Card>
+        <Card className="place-content-center">
+          <p className="font-bold font-serif text-xl">
+            Scaling around Shopify & BigCommerce
+          </p>
+        </Card>
+        <Card className="place-content-center">
+          <p className="font-bold font-serif text-xl">
+            Finance & Accounting Systems
+          </p>
+        </Card>
+        <Card className="place-content-center">
+          <p className="font-bold font-serif text-xl">
+            ERP Integrations
+          </p>
+        </Card>
+        <Card className="place-content-center">
+          <p className="font-bold font-serif text-xl">
+            Inventory Management
+          </p>
+        </Card>
+        <Card className="place-content-center">
+          <p className="font-bold font-serif text-xl">
+            Outgoing Logistics & 3PLs
+          </p>
+        </Card>
+        <Card className="place-content-center">
+          <p className="font-bold font-serif text-xl">
+            Retail Partnerships & EDI
+          </p>
+        </Card>
       </div>
     </section>
-    <section id="testimonials" className="py-10 lg:py-20">
-      <div className="container mx-auto">
-        <LabelText className="mb-8 text-gray-600 text-center">
-          What customers are saying
-        </LabelText>
-        <div className="flex flex-col md:flex-row md:-mx-3">
-          {customerData.map((customer) => (
-            <div key={customer.customerName} className="flex-1 px-3">
-              <CustomerCard customer={customer} />
-            </div>
-          ))}
-        </div>
-      </div>
+    <section id="past-clients" className="">
+      <PastClients />
     </section>
-    <section className="container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
-      <h3 className="text-5xl font-semibold">Ready to grow your business?</h3>
-      <p className="mt-8 text-xl font-light">
-        Quis lectus nulla at volutpat diam ut. Enim lobortis scelerisque
-        fermentum dui faucibus in.
+    <section className="my-20 py-20 bg-ghost-white rounded-lg text-center px-4">
+      <h3 className="text-5xl font-bold font-serif">
+        Let's talk
+      </h3>
+      <p className="mt-4 text-xl font-light">
+        If you're running a growing tech-enabled company, we'd love to connect
+        and hear about your journey.
       </p>
       <p className="mt-8">
         <Button size="xl">Get Started Now</Button>
