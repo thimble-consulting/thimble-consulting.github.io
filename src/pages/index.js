@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../components/Button";
 import Card from "../components/Card";
 import PastClients from "../components/PastClients";
 import Layout from "../components/layout/Layout";
@@ -8,9 +7,12 @@ import SvgBusinessDiscussion from "../svg/SvgBusinessDiscussion";
 import SvgGrowth from "../svg/SvgGrowth";
 import SvgIdeaPresentation from "../svg/SvgIdeaPresentation";
 import SvgLateGrowth from "../svg/SvgLateGrowth";
+import ContactUsForm from "../components/ContactUsForm";
+import ContactUsButton from "../components/ContactUsButton";
 
 const Index = () => (
   <Layout>
+    <ContactUsForm />
     <section className="flex flex-row pt-10 md:pt-20 lg:pt-36">
       <div className="lg:w-1/2">
         <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-serif leading-none">
@@ -24,7 +26,9 @@ const Index = () => (
             </p>
 
             <div className="my-8">
-              <Button size="lg">Get in touch</Button>
+              <ContactUsButton size="lg">
+                Get in touch
+              </ContactUsButton>
             </div>
           </div>
           <div className="hidden sm:block md:hidden sm:w-9/12">
@@ -190,7 +194,9 @@ const Index = () => (
         and hear about your journey.
       </p>
       <p className="mt-8">
-        <Button size="xl">Get Started Now</Button>
+        <ContactUsButton size="xl">
+          Get Started Now
+        </ContactUsButton>
       </p>
     </section>
   </Layout>

@@ -1,6 +1,6 @@
 import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import Button from "../Button";
+import ContactUsButton from "../ContactUsButton";
 
 const Header = () => (
   <header className="sticky top-0 bg-white shadow z-10 px-4">
@@ -31,7 +31,9 @@ const Header = () => (
           Testimonials
         </AnchorLink>
         <div className="hidden md:block">
-          <Button className="text-sm">Contact Us</Button>
+          <ContactUsButton className="text-sm">
+            Contact Us
+          </ContactUsButton>
         </div>
       </div>
     </div>

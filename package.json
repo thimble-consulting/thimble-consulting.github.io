@@ -16,6 +16,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fillout/react": "^1.1.1",
     "gatsby": "^5.13.0",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-image": "^3.13.1",
