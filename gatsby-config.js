@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   siteMetadata: {
     title: `Thimble Consulting`,
-    siteUrl: `https://thimble.consulting`,
+    siteUrl: `https://thimble.dev`,
   },
   plugins: [
     "gatsby-plugin-postcss",
