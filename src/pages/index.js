@@ -179,6 +179,11 @@ const Index = () => (
             Retail Partnerships & EDI
           </p>
         </Card>
+        <Card className="place-content-center sm:hidden md:block lg:hidden">
+          <p className="font-bold font-serif text-xl">
+            DevOps - Infra-as-Code
+          </p>
+        </Card>
       </div>
     </section>
     <section id="past-clients" className="">
