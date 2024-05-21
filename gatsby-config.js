@@ -14,6 +14,14 @@ module.exports = {
     `gatsby-transformer-sharp`, // Needed for dynamic images
     // End of Images Plugins
     {
+      resolve: "gatsby-plugin-piwik-pro",
+      options: {
+        containerUrl: "https://thimble.containers.piwik.pro",
+        siteId: process.env.PIWIK_SITE_ID,
+        enabled: process.env.NODE_ENV === "production",
+      },
+    },
+    {
       resolve: `gatsby-omni-font-loader`,
       options: {
         enableListener: true,
