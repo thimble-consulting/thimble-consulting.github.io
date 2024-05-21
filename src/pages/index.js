@@ -40,7 +40,7 @@ const Index = () => (
         <SvgIdeaPresentation />
       </div>
     </section>
-    <section id="methodology" className="pb-8">
+    <section id="approach" className="pb-8">
       <h2 className="text-3xl font-bold font-serif leading-none">
         Our Approach
       </h2>
@@ -64,7 +64,7 @@ const Index = () => (
         strategy to working hand-in-hand on implementation and delivery.
       </p>
     </section>
-    <section id="methodology" className="pb-8 lg:pb-0">
+    <section id="services" className="pb-8 lg:pb-0">
       <h2 className="text-3xl font-bold font-serif leading-none">
         Our Clients
       </h2>
@@ -77,7 +77,6 @@ const Index = () => (
       </p>
     </section>
     <SplitSection
-      id="services"
       reverseOrder
       primarySlot={
         <div className="lg:pl-12 xl:pl-24">

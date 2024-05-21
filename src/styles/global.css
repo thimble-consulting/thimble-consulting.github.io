@@ -5,8 +5,14 @@ a {
 a:hover {
   @apply text-weblink-blue-darker;
 }
-a:visited {
-  @apply text-weblink-visited;
-}
 @tailwind components;
 @tailwind utilities;
+
+section:before { 
+  content: '';
+  display: block;
+  position: relative;
+  width: 0;
+  height: 6em;
+  margin-top: -6em;
+}
