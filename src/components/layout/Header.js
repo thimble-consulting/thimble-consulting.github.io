@@ -2,9 +2,11 @@ import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import ContactUsButton from "../ContactUsButton";
 
-const Header = () => (
-  <header className="sticky top-0 bg-white shadow z-10 px-4">
-    <div className="flex flex-col sm:flex-row justify-between items-center mx-auto max-w-6xl py-4">
+const Header = ({ className = "" }) => (
+  <header className="sticky top-0 bg-white shadow z-10">
+    <div
+      className={`${className} flex flex-col sm:flex-row justify-between items-center py-4`}
+    >
       <a
         href="/"
         className="flex flex-grow items-center font-serif font-black italic text-thimble hover:text-thimble lowercase text-4xl"

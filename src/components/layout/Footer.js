@@ -2,8 +2,8 @@ import React from "react";
 import SvgLinkedIn from "../../svg/SvgLinkedIn";
 import SvgGithub from "../../svg/SvgGithub";
 
-const Footer = () => (
-  <footer className="max-w-6xl mx-auto px-8">
+const Footer = ({ className = "" }) => (
+  <footer className={className}>
     <div className="flex bg-gray-100 rounded-lg py-8 px-8 gap-4 align-middle">
       <div className="flex-1 flex items-center">
         <p className="text-gray-400 text-sm md:text-md">
