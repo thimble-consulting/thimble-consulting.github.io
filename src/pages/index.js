@@ -1,14 +1,15 @@
 import React from "react";
 import Card from "../components/Card";
-import PastClients from "../components/PastClients";
+import ContactUsForm from "../components/ContactUsForm";
+import ContactUsButton from "../components/ContactUsButton";
 import Layout from "../components/layout/Layout";
+import PastClients from "../components/PastClients";
+import SEO from "../components/seo";
 import SplitSection from "../components/SplitSection";
 import SvgBusinessDiscussion from "../svg/SvgBusinessDiscussion";
 import SvgGrowth from "../svg/SvgGrowth";
 import SvgIdeaPresentation from "../svg/SvgIdeaPresentation";
 import SvgLateGrowth from "../svg/SvgLateGrowth";
-import ContactUsForm from "../components/ContactUsForm";
-import ContactUsButton from "../components/ContactUsButton";
 
 const Index = () => (
   <Layout>
@@ -205,5 +206,7 @@ const Index = () => (
     </section>
   </Layout>
 );
+
+export const Head = () => <SEO title="Home" />;
 
 export default Index;

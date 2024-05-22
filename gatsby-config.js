@@ -1,9 +1,11 @@
-const path = require("path");
-
 module.exports = {
   siteMetadata: {
     title: `Thimble Consulting`,
-    siteUrl: `https://thimble.dev`,
+    description:
+      "We implement technology solutions that help businesses adapt to the evolving needs of growth.",
+    siteUrl: "https://thimble.dev",
+    url: "https://thimble.dev", // No trailing slash allowed!
+    image: "/thimble.png",
   },
   plugins: [
     "gatsby-plugin-postcss",
@@ -41,6 +43,12 @@ module.exports = {
               `https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet`,
           },
         ],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        "icon": "src/images/icon.png",
       },
     },
   ],
