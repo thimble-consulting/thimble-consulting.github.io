@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "../components/Card";
-import ContactUsForm from "../components/ContactUsForm";
 import ContactUsButton from "../components/ContactUsButton";
 import Layout from "../components/layout/Layout";
 import PastClients from "../components/PastClients";
@@ -13,7 +12,6 @@ import SvgLateGrowth from "../svg/SvgLateGrowth";
 
 const Index = () => (
   <Layout>
-    <ContactUsForm />
     <section className="flex flex-row pt-10 md:pt-20 lg:pt-36">
       <div className="lg:w-1/2">
         <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-serif leading-none">
@@ -27,9 +25,7 @@ const Index = () => (
             </p>
 
             <div className="my-8">
-              <ContactUsButton size="lg">
-                Get in touch
-              </ContactUsButton>
+              <ContactUsButton size="lg">Get in touch</ContactUsButton>
             </div>
           </div>
           <div className="hidden sm:block md:hidden sm:w-9/12">
@@ -161,14 +157,10 @@ const Index = () => (
           </p>
         </Card>
         <Card className="place-content-center">
-          <p className="font-bold font-serif text-xl">
-            ERP Integrations
-          </p>
+          <p className="font-bold font-serif text-xl">ERP Integrations</p>
         </Card>
         <Card className="place-content-center">
-          <p className="font-bold font-serif text-xl">
-            Inventory Management
-          </p>
+          <p className="font-bold font-serif text-xl">Inventory Management</p>
         </Card>
         <Card className="place-content-center">
           <p className="font-bold font-serif text-xl">
@@ -181,9 +173,7 @@ const Index = () => (
           </p>
         </Card>
         <Card className="place-content-center sm:hidden md:block lg:hidden">
-          <p className="font-bold font-serif text-xl">
-            DevOps - Infra-as-Code
-          </p>
+          <p className="font-bold font-serif text-xl">DevOps - Infra-as-Code</p>
         </Card>
       </div>
     </section>
@@ -191,17 +181,13 @@ const Index = () => (
       <PastClients />
     </section>
     <section className="my-20 py-20 bg-ghost-white rounded-lg text-center px-4">
-      <h3 className="text-5xl font-bold font-serif">
-        Let's talk
-      </h3>
+      <h3 className="text-5xl font-bold font-serif">Let's talk</h3>
       <p className="mt-4 text-xl font-light">
         If you're running a growing tech-enabled company, we'd love to connect
         and hear about your journey.
       </p>
       <p className="mt-8">
-        <ContactUsButton size="xl">
-          Get Started Now
-        </ContactUsButton>
+        <ContactUsButton size="xl">Get Started Now</ContactUsButton>
       </p>
     </section>
   </Layout>
