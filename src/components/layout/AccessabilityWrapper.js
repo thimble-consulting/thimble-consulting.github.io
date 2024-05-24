@@ -1,7 +1,7 @@
 import React from "react";
 import { AppContext } from "../../context/app-context";
 
-const BodyWrapper = ({ children }) => {
+const AccessabilityWrapper = ({ children }) => {
   return (
     <AppContext.Consumer>
       {({ isContactUsOpen }) => {
@@ -14,4 +14,4 @@ const BodyWrapper = ({ children }) => {
   );
 };
 
-export default BodyWrapper;
+export default AccessabilityWrapper;
