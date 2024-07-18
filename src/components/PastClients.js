@@ -9,7 +9,7 @@ const PastClients = () => (
     </h2>
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
       <Card className="place-content-center">
-        <div class="bg-walden-green place-content-center">
+        <div className="bg-walden-green place-content-center">
           <StaticImage
             src="../images/client-logos/walden.svg"
             alt="Walden Local"
@@ -17,10 +17,7 @@ const PastClients = () => (
         </div>
       </Card>
       <Card className="place-content-center">
-        <StaticImage
-          src="../images/client-logos/glossier.svg"
-          alt="Glossier"
-        />
+        <StaticImage src="../images/client-logos/glossier.svg" alt="Glossier" />
       </Card>
       <Card className="place-content-center">
         <StaticImage
