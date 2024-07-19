@@ -57,5 +57,7 @@ module.exports = {
   plugins: [
     require("daisyui"),
   ],
-  daisyui: {},
+  daisyui: {
+    darkTheme: false,
+  },
 };
