@@ -4,6 +4,7 @@ import ContactUsForm from "../components/ContactUsForm";
 import ContactUsButton from "../components/ContactUsButton";
 import Layout from "../components/layout/Layout";
 import PastClients from "../components/PastClients";
+import Expertise from "../components/Expertise";
 import SEO from "../components/seo";
 import SplitSection from "../components/SplitSection";
 import SvgBusinessDiscussion from "../svg/SvgBusinessDiscussion";
@@ -27,9 +28,7 @@ const Index = () => (
             </p>
 
             <div className="my-8">
-              <ContactUsButton size="lg">
-                Get in touch
-              </ContactUsButton>
+              <ContactUsButton size="lg">Get in touch</ContactUsButton>
             </div>
           </div>
           <div className="hidden sm:block md:hidden sm:w-9/12">
@@ -138,70 +137,18 @@ const Index = () => (
         </div>
       }
     />
-    <section id="story" className="py-10 lg:py-20 text-center">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <Card className="place-content-center">
-          <p className="font-bold font-serif text-xl">
-            Custom Software Solutions
-          </p>
-        </Card>
-        <Card className="place-content-center">
-          <p className="font-bold font-serif text-xl">
-            Order Management Systems
-          </p>
-        </Card>
-        <Card className="place-content-center">
-          <p className="font-bold font-serif text-xl">
-            Scaling around Shopify & BigCommerce
-          </p>
-        </Card>
-        <Card className="place-content-center">
-          <p className="font-bold font-serif text-xl">
-            Finance & Accounting Systems
-          </p>
-        </Card>
-        <Card className="place-content-center">
-          <p className="font-bold font-serif text-xl">
-            ERP Integrations
-          </p>
-        </Card>
-        <Card className="place-content-center">
-          <p className="font-bold font-serif text-xl">
-            Inventory Management
-          </p>
-        </Card>
-        <Card className="place-content-center">
-          <p className="font-bold font-serif text-xl">
-            Outgoing Logistics & 3PLs
-          </p>
-        </Card>
-        <Card className="place-content-center">
-          <p className="font-bold font-serif text-xl">
-            Retail Partnerships & EDI
-          </p>
-        </Card>
-        <Card className="place-content-center sm:hidden md:block lg:hidden">
-          <p className="font-bold font-serif text-xl">
-            DevOps - Infra-as-Code
-          </p>
-        </Card>
-      </div>
-    </section>
+    <Expertise />
     <section id="past-clients" className="">
       <PastClients />
     </section>
     <section className="my-20 py-20 bg-ghost-white rounded-lg text-center px-4">
-      <h3 className="text-5xl font-bold font-serif">
-        Let's talk
-      </h3>
+      <h3 className="text-5xl font-bold font-serif">Let's talk</h3>
       <p className="mt-4 text-xl font-light">
         If you're running a growing tech-enabled company, we'd love to connect
         and hear about your journey.
       </p>
       <p className="mt-8">
-        <ContactUsButton size="xl">
-          Get Started Now
-        </ContactUsButton>
+        <ContactUsButton size="xl">Get Started Now</ContactUsButton>
       </p>
     </section>
   </Layout>
