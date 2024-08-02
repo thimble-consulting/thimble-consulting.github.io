@@ -3,10 +3,8 @@ import { StaticImage } from "gatsby-plugin-image";
 import EmblaAutoScrollCarousel from "./embla/EmblaAutoScrollCarousel";
 
 const OPTIONS = { slidesToScroll: "auto", loop: true };
-// const SLIDE_COUNT = Images.length;
-// const SLIDES = Images;
 
-const Images = [
+const SLIDES = [
   <StaticImage
     className="w-full bg-walden-green"
     imgStyle={{
@@ -50,7 +48,7 @@ const Images = [
 ];
 
 const PastClients = () => (
-  <EmblaAutoScrollCarousel slides={Images} options={OPTIONS} />
+  <EmblaAutoScrollCarousel slides={SLIDES} options={OPTIONS} />
 );
 
 export default PastClients;
