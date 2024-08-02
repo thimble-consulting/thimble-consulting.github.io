@@ -1,6 +1,6 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import EmblaCarousel from "./embla/EmblaCarousel";
+import EmblaAutoScrollCarousel from "./embla/EmblaAutoScrollCarousel";
 
 const OPTIONS = { slidesToScroll: "auto", loop: true };
 // const SLIDE_COUNT = Images.length;
@@ -49,6 +49,8 @@ const Images = [
   />,
 ];
 
-const PastClients = () => <EmblaCarousel slides={Images} options={OPTIONS} />;
+const PastClients = () => (
+  <EmblaAutoScrollCarousel slides={Images} options={OPTIONS} />
+);
 
 export default PastClients;
