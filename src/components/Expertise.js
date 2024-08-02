@@ -1,16 +1,21 @@
 import React from "react";
-import Card from "./Card";
 import ExpertiseCard from "./ExpertiseCard";
 import ExpertiseDescription from "./ExpertiseDescription";
 import ExpertiseData from "../data/expertise-data";
 import { useState } from "react";
 
+import EmblaCarousel from "./embla/EmblaCarousel";
+const OPTIONS = { slidesToScroll: 'auto' }
+const SLIDE_COUNT = 10
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
-function Expertise(){
+const Expertise = () => {
   const [expertise, setExpertise] = useState();
 
   return(
     <section id="story" className="py-10 lg:py-20 text-center">
+      <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+
       <div className="carousel rounded-box h-48 space-x-4 text-wrap h-auto max-w-5xl">
         {ExpertiseData.map((data, index) => (
           <>
