@@ -12,10 +12,10 @@ const Footer = ({ className = "" }) => (
         </p>
       </div>
       <div className="w-96 flex flex-row items-center gap-4 flex-row-reverse">
-        <a href="https://www.linkedin.com/company/thimble-consulting/">
+        <a href="https://www.linkedin.com/company/thimble-consulting/" aria-label="LinkedIn Profile">
           <SvgLinkedIn />
         </a>
-        <a href="https://github.com/thimble-consulting">
+        <a href="https://github.com/thimble-consulting" aria-label="Github Profile">
           <SvgGithub />
         </a>
       </div>

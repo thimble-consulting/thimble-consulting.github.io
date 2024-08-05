@@ -4,7 +4,7 @@ import ContactUsForm from "../components/ContactUsForm";
 import ContactUsButton from "../components/ContactUsButton";
 import Layout from "../components/layout/Layout";
 import PastClients from "../components/PastClients";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 import SplitSection from "../components/SplitSection";
 import SvgBusinessDiscussion from "../svg/SvgBusinessDiscussion";
 import SvgGrowth from "../svg/SvgGrowth";
@@ -199,6 +199,6 @@ const Index = () => {
   );
 };
 
-export const Head = () => <SEO title="Home" />;
+export const Head = () => <Seo title="Home" />;
 
 export default Index;
