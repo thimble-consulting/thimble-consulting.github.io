@@ -182,7 +182,7 @@ const Index = () => {
           </Card>
         </div>
       </section>
-      <section id="past-clients" className="">
+      <section id="past-clients" className="my-10 sm:my-8 md:my-0">
         <PastClients />
       </section>
       <section className="my-20 py-20 bg-ghost-white rounded-lg text-center px-4">
