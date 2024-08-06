@@ -4,7 +4,7 @@ import ContactUsForm from "../components/ContactUsForm";
 import ContactUsButton from "../components/ContactUsButton";
 import Layout from "../components/layout/Layout";
 import PastClients from "../components/PastClients";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 import SplitSection from "../components/SplitSection";
 import SvgBusinessDiscussion from "../svg/SvgBusinessDiscussion";
 import SvgGrowth from "../svg/SvgGrowth";
@@ -182,7 +182,7 @@ const Index = () => {
           </Card>
         </div>
       </section>
-      <section id="past-clients" className="">
+      <section id="past-clients" className="my-10 sm:my-8 md:my-0">
         <PastClients />
       </section>
       <section className="my-20 py-20 bg-ghost-white rounded-lg text-center px-4">
@@ -199,6 +199,6 @@ const Index = () => {
   );
 };
 
-export const Head = () => <SEO title="Home" />;
+export const Head = () => <Seo title="Home" />;
 
 export default Index;
