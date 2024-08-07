@@ -24,12 +24,14 @@ section:before {
   --slide-height: 19rem;
   --slide-spacing: 1rem;
   --slide-size: 70%;
+  --slide-spacing-xs: 1.2rem;
+  --slide-size-xs: 50%;
   --slide-spacing-sm: 1.2rem;
   --slide-size-sm: 40%;
   --slide-spacing-md: 2rem;
   --slide-size-md: calc(100% / 3);
   --slide-spacing-lg: 2rem;
-  --slide-size-lg: calc(100% / 4);
+  --slide-size-lg: calc(100% / 3.5);
 }
 
 .embla__container {
@@ -40,9 +42,17 @@ section:before {
 }
 
 .embla__slide {
-  min-width: 0;
+  transform: translate3d(0, 0, 0);
   flex: 0 0 var(--slide-size);
+  min-width: 0;
   padding-left: var(--slide-spacing);
+}
+
+@media (min-width: 540px) {
+  .embla__slide {
+    flex: 0 0 var(--slide-size-xs);
+    padding-left: var(--slide-spacing-xs);
+  }
 }
 
 @media (min-width: 640px) {
@@ -76,8 +86,6 @@ section:before {
   justify-content: center;
   height: var(--slide-height);
   user-select: none;
-  border: #000000;
-  border-width: 4rem;
 }
 
 .embla__controls {

@@ -1,0 +1,22 @@
+[
+  {
+    "logoSrc": "../images/client-logos/walden.svg",
+    "name": "Walden Local"
+  },
+  {
+    "logoSrc": "../images/client-logos/glossier.svg",
+    "name": "Glossier"
+  },
+  {
+    "logoSrc": "../images/client-logos/casper-logo.png",
+    "name": "Casper"
+  },
+  {
+    "logoSrc": "../images/client-logos/florence-logo.png",
+    "name": "Florence"
+  },
+  {
+    "logoSrc": "../images/client-logos/felcana-logo.png",
+    "name": "Felcana"
+  }
+]

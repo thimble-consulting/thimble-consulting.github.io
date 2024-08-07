@@ -1,64 +1,71 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import EmblaAutoScrollCarousel from "./embla/EmblaAutoScrollCarousel";
+import { graphql, useStaticQuery } from "gatsby";
 
 const OPTIONS = { slidesToScroll: "auto", loop: true };
 
-const SLIDES = [
-  <div className="bg-walden-green rounded-2xl overflow-hidden drop-shadow-lg p-8">
-    <StaticImage
-      className="w-full"
-      imgStyle={{
-        objectFit: "scale-down",
-      }}
-      src="../images/client-logos/walden.svg"
-      alt="Walden Local"
-    />
-  </div>,
-  <div className="bg-white rounded-2xl overflow-hidden drop-shadow-lg p-4">
-    <StaticImage
-      className="w-full"
-      imgStyle={{
-        objectFit: "scale-down",
-      }}
-      src="../images/client-logos/glossier.svg"
-      alt="Glossier"
-    />
-  </div>,
-  <div className="rounded-2xl overflow-hidden drop-shadow-lg">
-    <StaticImage
-      className="w-full"
-      imgStyle={{
-        objectFit: "scale-down",
-      }}
-      src="../images/client-logos/casper-logo.png"
-      alt="Casper"
-    />
-  </div>,
-  <div className="rounded-2xl overflow-hidden drop-shadow-lg">
-    <StaticImage
-      className="w-full"
-      imgStyle={{
-        objectFit: "scale-down",
-      }}
-      src="../images/client-logos/florence-logo.png"
-      alt="Florence"
-    />
-  </div>,
-  <div className="rounded-2xl overflow-hidden drop-shadow-lg">
-    <StaticImage
-      className="w-full"
-      imgStyle={{
-        objectFit: "scale-down",
-      }}
-      src="../images/client-logos/felcana-logo.png"
-      alt="Felcana"
-    />
-  </div>,
-];
+const ClientLogo = ({alt, publicURL, childImageSharp}) => {
+  if (childImageSharp) {
+    return (
+      <GatsbyImage
+        className="h-full xs:h-auto xs:w-full aspect-square rounded-2xl"
+        imgStyle={{
+          objectFit: "contain",
+        }}
+        image={childImageSharp.gatsbyImageData}
+        alt={alt}
+      />
+    )
+  } else { // then it's an svg, see https://github.com/gatsbyjs/gatsby/issues/10297#issuecomment-464834529
+    return (
+      <div class="rounded-2xl overflow-hidden">
+        <img class="rounded-2xl" style={{ height: "100%" }} src={publicURL} alt={alt} />
+      </div>
+    )
+  }
+}
 
-const PastClients = () => (
-  <EmblaAutoScrollCarousel slides={SLIDES} options={OPTIONS} viewPortClassName="lg:overflow-hidden" />
-);
+const PastClient = ({ name, logoSrc }) => {
+  const imgProps = {
+    alt: name,
+    ...logoSrc,
+  }
+
+  return (
+    <div className="h-full xs:h-auto xs:w-full aspect-square overflow-hidden drop-shadow-lg">
+      { ClientLogo(imgProps) }
+    </div>
+  )
+}
+
+const PastClients = () => {
+  const queryData = useStaticQuery(graphql`
+    query PastClients {
+      allPastClientsJson {
+        edges {
+          node {
+            name
+            logoSrc {
+              id
+              publicURL
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const slides = queryData.allPastClientsJson.edges.map(({ node: { name, logoSrc } }) => (
+    PastClient({ name, logoSrc })
+  ))
+
+  return (
+    <EmblaAutoScrollCarousel slides={slides} options={OPTIONS} viewPortClassName="lg:overflow-hidden" />
+  )
+};
 
 export default PastClients;
