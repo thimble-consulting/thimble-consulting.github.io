@@ -28,7 +28,7 @@ const ClientLogo = ({alt, publicURL, childImageSharp}) => {
 
 const PastClient = ({ name, logoSrc }) => {
   const imgProps = {
-    alt: name,
+    alt: `Logo of past client company, ${name}`,
     ...logoSrc,
   }
 
