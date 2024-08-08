@@ -13,8 +13,27 @@ module.exports = {
     // Images Plugins
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-json`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
     // End of Images Plugins
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+        // Ignore files starting with a dot
+        ignore: [`**/\.*`],
+        // Use "mtime" and "inode" to fingerprint files (to check if file has changed)
+        fastHash: true,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
     {
       resolve: "gatsby-plugin-piwik-pro",
       options: {
