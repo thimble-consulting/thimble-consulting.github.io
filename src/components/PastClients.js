@@ -19,8 +19,8 @@ const ClientLogo = ({alt, publicURL, childImageSharp}) => {
     )
   } else { // then it's an svg, see https://github.com/gatsbyjs/gatsby/issues/10297#issuecomment-464834529
     return (
-      <div class="rounded-2xl overflow-hidden">
-        <img class="rounded-2xl" style={{ height: "100%" }} src={publicURL} alt={alt} />
+      <div className="rounded-2xl overflow-hidden">
+        <img className="rounded-2xl" style={{ height: "100%" }} src={publicURL} alt={alt} />
       </div>
     )
   }
