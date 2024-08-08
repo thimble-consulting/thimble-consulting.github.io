@@ -1,7 +1,7 @@
 import React from "react";
-import EmblaAutoScrollCarousel from "./embla/EmblaAutoScrollCarousel";
+import EmblaCarousel from "./embla/EmblaCarousel";
 import Card from "../components/Card";
-const OPTIONS = { slidesToScroll: "auto", loop: true };
+const OPTIONS = { slidesToScroll: "auto", loop: false };
 
 const SLIDES = [
   <Card className="place-content-center h-full w-full object-contain">
@@ -52,8 +52,8 @@ const SLIDES = [
 ];
 
 const Expertise = () => (
-  <div className="gap-4 object-contain overflow-hidden drop-shadow-lg">
-    <EmblaAutoScrollCarousel slides={SLIDES} options={OPTIONS} />
+  <div className="gap-4 object-contain drop-shadow-lg">
+    <EmblaCarousel slides={SLIDES} options={OPTIONS} />
   </div>
 );
 
