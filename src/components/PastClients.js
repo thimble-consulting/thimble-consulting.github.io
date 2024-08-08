@@ -64,7 +64,7 @@ const PastClients = () => {
   ))
 
   return (
-    <EmblaAutoScrollCarousel slides={slides} options={OPTIONS} viewPortClassName="lg:overflow-hidden" />
+    <EmblaAutoScrollCarousel slides={slides} options={OPTIONS} />
   )
 };
 

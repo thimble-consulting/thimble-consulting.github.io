@@ -183,6 +183,9 @@ const Index = () => {
         </div>
       </section>
       <section id="past-clients">
+        <h2 className="text-3xl font-bold font-serif leading-none mb-6">
+          Past Clients
+        </h2>
         <PastClients />
       </section>
       <section className="my-20 py-20 bg-ghost-white rounded-lg text-center px-4">
