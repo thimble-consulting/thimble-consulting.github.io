@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "../components/Card";
 import ContactUsForm from "../components/ContactUsForm";
 import ContactUsButton from "../components/ContactUsButton";
 import Layout from "../components/layout/Layout";
@@ -10,6 +9,7 @@ import SvgBusinessDiscussion from "../svg/SvgBusinessDiscussion";
 import SvgGrowth from "../svg/SvgGrowth";
 import SvgIdeaPresentation from "../svg/SvgIdeaPresentation";
 import SvgLateGrowth from "../svg/SvgLateGrowth";
+import Expertise from "../components/Expertise";
 
 const Index = () => {
   return (
@@ -138,49 +138,7 @@ const Index = () => {
         }
       />
       <section id="story" className="py-10 lg:py-20 text-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <Card className="place-content-center">
-            <p className="font-bold font-serif text-xl">
-              Custom Software Solutions
-            </p>
-          </Card>
-          <Card className="place-content-center">
-            <p className="font-bold font-serif text-xl">
-              Order Management Systems
-            </p>
-          </Card>
-          <Card className="place-content-center">
-            <p className="font-bold font-serif text-xl">
-              Scaling around Shopify & BigCommerce
-            </p>
-          </Card>
-          <Card className="place-content-center">
-            <p className="font-bold font-serif text-xl">
-              Finance & Accounting Systems
-            </p>
-          </Card>
-          <Card className="place-content-center">
-            <p className="font-bold font-serif text-xl">ERP Integrations</p>
-          </Card>
-          <Card className="place-content-center">
-            <p className="font-bold font-serif text-xl">Inventory Management</p>
-          </Card>
-          <Card className="place-content-center">
-            <p className="font-bold font-serif text-xl">
-              Outgoing Logistics & 3PLs
-            </p>
-          </Card>
-          <Card className="place-content-center">
-            <p className="font-bold font-serif text-xl">
-              Retail Partnerships & EDI
-            </p>
-          </Card>
-          <Card className="place-content-center sm:hidden md:block lg:hidden">
-            <p className="font-bold font-serif text-xl">
-              DevOps - Infra-as-Code
-            </p>
-          </Card>
-        </div>
+        <Expertise />
       </section>
       <section id="past-clients">
         <h2 className="text-3xl font-bold font-serif leading-none mb-6">
