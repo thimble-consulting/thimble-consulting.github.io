@@ -8,7 +8,7 @@ const EmblaAutoScrollCarousel = ({ slides, options }) => {
   ])
 
   return (
-    <div className="embla__parent h-[58vw] xs:h-52">
+    <div className="embla__parent">
       <div className="embla">
         <div className={`embla__viewport`} ref={emblaRef}>
           <div className="embla__container">

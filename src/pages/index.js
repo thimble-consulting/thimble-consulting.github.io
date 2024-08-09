@@ -15,7 +15,7 @@ const Index = () => {
   return (
     <Layout>
       <ContactUsForm />
-      <section className="flex flex-row pt-10 md:pt-20 lg:pt-36">
+      <section className="flex flex-row pt-10 md:pt-20">
         <div className="lg:w-1/2">
           <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-serif leading-none">
             Software for Start-Up, Scale-Up & Beyond

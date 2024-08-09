@@ -9,13 +9,20 @@ a:hover {
   @apply text-weblink-blue-darker;
 }
 
-main:before {
+section:before {
   content: '';
   display: block;
   position: relative;
   width: 0;
-  height: 6em;
-  margin-top: -6em;
+  height: 8em;
+  margin-top: -8em;
+}
+
+@media (min-width: 640px) {
+  section:before {
+    height: 6em;
+    margin-top: -6em;
+  }
 }
 
 .embla {
