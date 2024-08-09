@@ -15,7 +15,7 @@ const Index = () => {
   return (
     <Layout>
       <ContactUsForm />
-      <section className="flex flex-row pt-10 md:pt-20 lg:pt-36">
+      <section className="flex flex-row pt-10 md:pt-20">
         <div className="lg:w-1/2">
           <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-serif leading-none">
             Software for Start-Up, Scale-Up & Beyond
@@ -183,6 +183,9 @@ const Index = () => {
         </div>
       </section>
       <section id="past-clients">
+        <h2 className="text-3xl font-bold font-serif leading-none mb-6">
+          Past Clients
+        </h2>
         <PastClients />
       </section>
       <section className="my-20 py-20 bg-ghost-white rounded-lg text-center px-4">

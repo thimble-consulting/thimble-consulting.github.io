@@ -14,14 +14,21 @@ section:before {
   display: block;
   position: relative;
   width: 0;
-  height: 6em;
-  margin-top: -6em;
+  height: 8em;
+  margin-top: -8em;
+}
+
+@media (min-width: 640px) {
+  section:before {
+    height: 6em;
+    margin-top: -6em;
+  }
 }
 
 .embla {
   max-width: 70rem;
   margin: auto;
-  --slide-height: 19rem;
+  --slide-height: 100%;
   --slide-spacing: 1rem;
   --slide-size: 70%;
   --slide-spacing-xs: 1.2rem;
@@ -32,6 +39,12 @@ section:before {
   --slide-size-md: calc(100% / 3);
   --slide-spacing-lg: 2rem;
   --slide-size-lg: calc(100% / 3.5);
+}
+
+.embla__viewport {
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .embla__container {
