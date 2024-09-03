@@ -23,8 +23,8 @@ const Index = () => {
           <div className="flex flex-row mt-6 items-center">
             <div className="">
               <p className="text-xl font-light">
-                At Thimble, we help clients implement technology solutions that
-                adapt with the evolving needs of growth.
+                With 10+ years of experience, our mission is to help everyday companies
+                use technology to better their business.
               </p>
 
               <div className="my-8">
@@ -40,47 +40,40 @@ const Index = () => {
           <SvgIdeaPresentation />
         </div>
       </section>
-      <section id="approach" className="pb-8">
+      <section id="intro" className="pb-8">
         <h2 className="text-3xl font-bold font-serif leading-none">
-          Our Approach
+          What we do
         </h2>
         <p className="text-xl mt-6 font-light">
-          Our team has 10+ years of experience solving complex problems for
-          tech-enabled businesses, from integrating off-the-shelf services to
-          maturing custom software solutions and everything in between.
+          Our approach is to use a deep understanding of each business, from its product,
+          roadmap, and operations, to drive a pragmatic approach to the software
+          & systems that power it.
         </p>
         <p className="text-xl mt-6 font-light">
-          Our mission is to help the tech behind everyday companies run their
-          business better.
+          We work with growing tech-enabled businesses, from start-up to IPO. Our most
+          recent work has largely focused on D2C e-commerce, with previous projects in
+          marketplace platforms and more.
         </p>
         <p className="text-xl mt-6 font-light">
-          We root our process in a deep understanding of clients’ business
-          roadmap and their product and business operations, incorporating this
-          into a pragmatic approach to their software & systems.
+          We've brought this approach to businesses in the U.S. and the U.K, including:
         </p>
-        <p className="text-xl mt-6 font-light">
-          We bring our process onboard with clients by embedding our team within
-          existing tech teams and connecting end-to-end with our clients from
-          strategy to working hand-in-hand on implementation and delivery.
-        </p>
+        <div className="mt-8">
+          <PastClients />
+        </div>
       </section>
-      <section id="services" className="pb-8 lg:pb-0">
+      <section id="approach" className="mt-4 pb-8 lg:pb-0">
         <h2 className="text-3xl font-bold font-serif leading-none">
-          Our Clients
+          For every stage of business
         </h2>
         <p className="text-xl mt-6 font-light">
-          We work with growing tech-enabled businesses in every stage, from
-          start-up to IPO. Most recently we've mostly worked in D2C e-commerce,
-          but we've also worked on marketplace platforms and more. From this
-          breadth of experience, we've learned that our approach adapts to three
-          main phases of growth for companies:
+          We work with businesses at every stage of growth, adapting our approach into three main phases:
         </p>
       </section>
       <SplitSection
         reverseOrder
         primarySlot={
           <div className="lg:pl-12 xl:pl-24">
-            <h3 className="text-3xl font-bold font-serif leading-tight">
+            <h3 className="text-2xl font-bold font-serif leading-tight">
               Start-Up Foundations
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
@@ -100,7 +93,7 @@ const Index = () => {
       <SplitSection
         primarySlot={
           <div className="lg:pr-12 xl:pr-24">
-            <h3 className="text-3xl font-bold font-serif leading-tight">
+            <h3 className="text-2xl font-bold font-serif leading-tight">
               Scale-Up Operations
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
@@ -120,7 +113,7 @@ const Index = () => {
         reverseOrder
         primarySlot={
           <div className="lg:pl-12 xl:pl-24">
-            <h3 className="text-3xl font-bold font-serif leading-tight">
+            <h3 className="text-2xl font-bold font-serif leading-tight">
               Late-Growth & Pre-IPO
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
@@ -137,16 +130,16 @@ const Index = () => {
           </div>
         }
       />
-      <section id="story" className="py-10 lg:py-20 text-center">
+      <section id="services" className="my-10 lg:mt-20">
+        <h2 className="text-3xl font-bold font-serif leading-none">
+          Our Services
+        </h2>
+        <p className="text-xl my-6 font-light">
+          We've built and extended systems across a wide variety of domains, including:
+        </p>
         <Expertise />
       </section>
-      <section id="past-clients">
-        <h2 className="text-3xl font-bold font-serif leading-none mb-6">
-          Past Clients
-        </h2>
-        <PastClients />
-      </section>
-      <section className="my-20 py-20 bg-ghost-white rounded-lg text-center px-4">
+      <section className="my-4 py-20 bg-ghost-white rounded-lg text-center px-4">
         <h3 className="text-5xl font-bold font-serif">Let's talk</h3>
         <p className="mt-4 text-xl font-light">
           If you're running a growing tech-enabled company, we'd love to connect

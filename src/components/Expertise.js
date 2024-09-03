@@ -6,7 +6,7 @@ const OPTIONS = { slidesToScroll: "auto", loop: false };
 
 const ExpertiseCard = ({ title }) => {
   return (
-    <Card className="place-content-center h-full w-full object-contain">
+    <Card className="place-content-center h-48 w-full object-contain text-center">
       <p className="font-bold font-serif text-xl">
         { title }
       </p>
