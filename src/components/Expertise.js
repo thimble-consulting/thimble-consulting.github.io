@@ -1,18 +1,8 @@
 import React from "react";
 import EmblaCarousel from "./embla/EmblaCarousel";
-import Card from "../components/Card";
+import ExpertiseCard from "../components/ExpertiseCard";
 import { graphql, useStaticQuery } from "gatsby";
 const OPTIONS = { slidesToScroll: "auto", loop: false };
-
-const ExpertiseCard = ({ title }) => {
-  return (
-    <Card className="place-content-center h-48 w-full object-contain text-center">
-      <p className="font-bold font-serif text-xl">
-        { title }
-      </p>
-    </Card>
-  )
-}
 
 const Expertise = () => {
   const queryData = useStaticQuery(graphql`
@@ -21,18 +11,20 @@ const Expertise = () => {
         edges {
           node {
             title
+            detail
+            blurb
           }
         }
       }
     }
   `)
 
-  const slides = queryData.allExpertiseAreasJson.edges.map(({ node: { title } }) => (
-    ExpertiseCard({ title })
+  let slides = queryData.allExpertiseAreasJson.edges.map(({ node: { title, detail, blurb } }) => (
+    ExpertiseCard({ title, detail, blurb })
   ))
 
   return (
-    <div className="gap-4 object-contain drop-shadow-lg">
+    <div className="gap-4 object-contain">
       <EmblaCarousel slides={slides} options={OPTIONS} />
     </div>
   )
