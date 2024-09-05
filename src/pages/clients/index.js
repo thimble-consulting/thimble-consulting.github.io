@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 export default function Index() {
   return (
     <Layout>
-      <div class="flex flex-col text-center">
+      <div className="flex flex-col text-center">
         <Link to="/clients/walden">Walden</Link>
         <Link to="/clients/casper">Casper</Link>
         <Link to="/clients/florence">Florence</Link>
