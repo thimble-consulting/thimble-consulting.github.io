@@ -2,33 +2,11 @@ import * as React from 'react';
 import { ParallaxLayer } from '@react-spring/parallax';
 import { GatsbyImage } from "gatsby-plugin-image";
 import * as styles from '../../styles/styles.module.css';
-import { graphql, useStaticQuery } from "gatsby";
 
-const Hero = ({ clientName }) => {
-  const queryData = useStaticQuery(graphql`
-    query PastClients {
-      allPastClientsJson {
-        edges {
-          node {
-            name
-            logoSrc {
-              id
-              publicURL
-              childImageSharp {
-                gatsbyImageData
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
-
-  const clientInfo = queryData.allPastClientsJson.edges.find(client => client.node.name === clientName)
-
+const Hero = ({ client }) => {
   const imgProps = {
-    alt: `Logo of past client company, ${clientInfo.node.name}`,
-    ...clientInfo.node.logoSrc,
+    alt: `Logo of past client company, ${client.name}`,
+    ...client.logoSrc,
   }
 
   return (
@@ -46,9 +24,7 @@ const Hero = ({ clientName }) => {
         {HeroImage(imgProps)}
 
         <p className={`text-white font-light m-auto text-xl text-center`}>
-          Walden Local Meat works directly with small-acreage farmers throughout
-          the North-East, providing locally-grown, sustainable, humanely-raised
-          meat to families via their subscription share program.
+          {client.heroText}
         </p>
       </div>
     </ParallaxLayer>

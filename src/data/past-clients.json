@@ -1,22 +1,54 @@
 [
   {
     "logoSrc": "../images/client-logos/walden.svg",
-    "name": "Walden Local"
-  },
-  {
-    "logoSrc": "../images/client-logos/glossier.svg",
-    "name": "Glossier"
-  },
-  {
-    "logoSrc": "../images/client-logos/casper-logo.png",
-    "name": "Casper"
-  },
-  {
-    "logoSrc": "../images/client-logos/florence-logo.png",
-    "name": "Florence"
-  },
-  {
-    "logoSrc": "../images/client-logos/felcana-logo.png",
-    "name": "Felcana"
+    "name": "Walden Local",
+    "slug": "walden",
+    "heroText": "Walden Local Meat works directly with small-acreage farmers throughout the North-East, providing locally-grown, sustainable, humanely-raised meat to families via their subscription share program.",
+    "sections": [
+      {
+        "title": "Challenge",
+        "parallaxLayers": [
+          [
+            "Thimble connected with Walden in late 2019, at a time when lengthening development cycles were leading Walden to feel unable to evolve the product offerings and core experience available its customers."
+          ],
+          [
+            "Thimble helped Walden overcome this slowdown by standardizing and simplifying its technology footprint. We helped assess their tech challenges and charted out how the business could adapt to run on a standard e-comm platform. We successfully worked through this migration, partnering with stakeholders to adapt the necessary parts of the business’ operations and member experience.",
+            "Leveraging these changes, we then worked with Walden to explore new product experiences for members, opening up new revenue streams while helping onboard industry-standard practices for testing, landing page optimization, data warehousing and dev ops."
+          ]
+        ]
+      },
+      {
+        "title": "Overcoming the Slowdown",
+        "parallaxLayers": [
+          [
+            "Walden’s supply chain starts directly with its farmers, stretching from processing & flash-freezing its meats to running its own warehouse and delivery fleet. It wasn’t clear internally whether the technology challenges Walden faced just reflected complexities inherent to the business, or if there was a better approach."
+          ],
+          [
+            "Thimble’s initial engagement was to dive directly into this question and help assess these options. We onboarded into the current custom tech solutions and built up to a detailed understanding of Walden’s unique and complex operations. We laid out ways to enable simpler, more standard architectures and the key parts of the company’s product experience and operation that would be needed to enable these standardizations."
+          ],
+          [
+            "From this, we laid out two main approaches to simplifying to the business: starting on the operations side, or starting with the e-commerce side. It was decided to opt for the e-comm first approach, on a headless BigCommerce architecture. This featured a main Walden-managed service running alongside BigCommerce, to support a few unique parts of Walden’s product and operations structure that were necessary to retain.",
+            "Walden was successfully migrated to this new architecture in October, 2021."
+          ]
+        ]
+      },
+      {
+        "title": "New Pastures",
+        "parallaxLayers": [
+          [
+            "With the new platform in place, we helped Walden start to flex the ability to test out new product offerings and revenue streams. We enabled Walden to allow for à la carte orders and offer holiday order experiences multiple times per year, in parallel to the base subscription. This was a significant win for the business to enable efforts to drive incremental revenue. Previously, the business could only offer one holiday order, Thanksgiving, once per year, in place of a subscription order, and had no other incremental purchase capabilities. Walden leveraged this flexibility and ultimately started running 4 holiday orders per year, in addition to growing its à la carte order revenue."
+          ],
+          [
+            "Having built in foundations for their new setup to be adaptable to change, we helped Walden experiment with changes to their core subscription product. We enabled Walden to have the offer certain meats like lamb as an upsell to customers, and later offer seafood in their core subscription. We also helped Walden offer sign-up discounts & promotions, shift to a structure where it could offer any product in its catalog via a subscription, and deliver a complete rebranding of the customer-facing site."
+          ],
+          [
+            "On the operations & customer experience side, we helped Walden continue to simplify by expanding and adapting the tools for these teams to be self-service. This included tools for areas like order management and delivery planning, with one example being a tool to plan for weather-based delivery delays."
+          ],
+          [
+            "In parallel, we introduced new tooling and infrastructure to help Walden modernize its marketing and analytics departments. We introduced their first A/B testing frameworks and new product analytics tools to enable Walden to take a data-driven approach to conversion optimization and landing page improvements. We helped Walden introduce a central data warehouse to its systems and adopt new tools for extracting and organizing their analytics."
+          ]
+        ]
+      }
+    ]
   }
 ]
