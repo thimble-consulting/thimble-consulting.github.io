@@ -26,7 +26,6 @@ exports.createPages = ({ graphql, actions }) => {
               title
               parallaxLayers
             }
-            foo
           }
         }
       }

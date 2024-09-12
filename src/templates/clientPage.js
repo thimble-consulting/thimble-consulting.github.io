@@ -8,9 +8,10 @@ import ContactUsForm from "../components/ContactUsForm.js";
 
 export default function Index({pageContext}) {
   const { client } = pageContext
+  let offset = 1
 
   return (
-    <Parallax pages={10}>
+    <Parallax pages={15}>
       <Header className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8" />
       <ContactUsForm />
       <Hero client={client}></Hero>
@@ -25,7 +26,7 @@ export default function Index({pageContext}) {
                 justifyContent: 'center',
                 zIndex: 100,
               }}
-              sticky={{ start: 1, end: 4.1 }}>
+              sticky={{ start: offset, end: (offset + section.parallaxLayers.length) }}>
               <div className="flex bg-gray-100 py-8 px-8 gap-4 align-middle w-full mb-52">
                 <div className="flex-1 flex items-center">
                   <p className="text-gray-400 text-lg text-center">
@@ -36,6 +37,7 @@ export default function Index({pageContext}) {
             </ParallaxLayer>
 
             {section.parallaxLayers.map((parallaxLayer, index) => {
+              offset++;
               return(
                 <ParallaxLayer
                   style={{
@@ -46,7 +48,7 @@ export default function Index({pageContext}) {
                     textAlign: "center",
                     zIndex: 50,
                   }}
-                  sticky={{ start: 3.11, end: 4.11 }}>
+                  sticky={{ start: (offset -1) , end: offset }}>
                   <div className={`flex flex-col justify-around gap-10 mx-20`}>
                     {parallaxLayer.map(paragraph => {
                       return(
@@ -60,6 +62,7 @@ export default function Index({pageContext}) {
               )
             })}
           </>
+
         )
       })}
     </Parallax>
