@@ -63,10 +63,9 @@ const PastClients = () => {
     PastClient({ name, logoSrc })
   ))
 
-  return typeof slides
-  // return (
-  //   <EmblaAutoScrollCarousel slides={slides} options={OPTIONS} />
-  // )
+  return (
+    <EmblaAutoScrollCarousel slides={slides} options={OPTIONS} />
+  )
 };
 
 export default PastClients;
