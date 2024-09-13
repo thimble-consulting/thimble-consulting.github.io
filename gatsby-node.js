@@ -24,7 +24,13 @@ exports.createPages = ({ graphql, actions }) => {
             }
             sections {
               title
-              parallaxLayers
+              parallaxLayers {
+                content
+                parallaxParams {
+                  stickyStart
+                  stickyEnd
+                }
+              }
             }
           }
         }
