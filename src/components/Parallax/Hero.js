@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { ParallaxLayer } from '@react-spring/parallax';
 import { GatsbyImage } from "gatsby-plugin-image";
-import * as styles from '../../styles/styles.module.css';
 
 const Hero = ({ client }) => {
   const imgProps = {
@@ -18,7 +17,7 @@ const Hero = ({ client }) => {
       justifyContent: 'center',
       background: '#183028',
       }}
-      className={`${styles.initialPage}`}
+      className="initialPage"
     >
       <div className={`flex flex-col w-1/3`}>
         {HeroImage(imgProps)}

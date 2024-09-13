@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import * as styles from '../styles/styles.module.css'
 import { GatsbyImage } from "gatsby-plugin-image";
 import Hero from "../components/Parallax/Hero.js";
 import Header from "../components/layout/Header.js";
@@ -53,7 +52,7 @@ export default function Index({pageContext}) {
                 justifyContent: 'center',
                 zIndex: offset,
               }}
-              className={`${styles.subHeader}`}
+              className="subHeader"
               sticky={{ start: (offset - section.parallaxLayers.length), end: offset }}>
               <div className="flex bg-gray-100 py-8 px-8 gap-4 align-middle w-full mb-52">
                 <div className="flex-1 flex items-center">
@@ -103,7 +102,7 @@ export default function Index({pageContext}) {
                           style={{
                             zIndex: index,
                           }}
-                          className={`${styles.slideText}`}>
+                          className="slideText">
                           {paragraph}
                         </div>
                       )
