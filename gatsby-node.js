@@ -41,21 +41,11 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
-    // Create blog post pages.
     result.data.allPastClientsJson.edges.forEach(edge => {
       createPage({
-        // Path for this page — required
-        path: `${edge.node.slug}`,
+        path: `clients/${edge.node.slug}`,
         component: clientPageTemplate,
         context: {
-          // Add optional context data to be inserted
-          // as props into the page component.
-          //
-          // The context data can also be used as
-          // arguments to the page GraphQL query.
-          //
-          // The page "path" is always available as a GraphQL
-          // argument.
           client: edge.node
         },
       })

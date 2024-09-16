@@ -15,14 +15,13 @@ const Hero = ({ client }) => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      background: '#183028',
       }}
-      className="initialPage"
+      className={`initialPage ${client.slug}`}
     >
       <div className={`flex flex-col w-1/3`}>
         {HeroImage(imgProps)}
 
-        <p className={`text-white font-light m-auto text-xl text-center`}>
+        <p className={`font-light m-auto text-xl text-center`}>
           {client.heroText}
         </p>
       </div>

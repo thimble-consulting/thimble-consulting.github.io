@@ -205,7 +205,6 @@ section:before {
 
 .initialPage {
   justify-content: center;
-  background-color: #183028;
 }
 
 .slideText {
@@ -215,4 +214,25 @@ section:before {
   text-align: left;
   font-weight: 300;
   background: white;
+}
+
+.walden {
+  background-color: #183028 !important;
+  color: white;
+}
+
+.casper {
+  background-color: white !important;
+}
+
+.glossier {
+  background-color: white !important;
+}
+
+.felcana {
+  background-color: white !important;
+}
+
+.florence {
+  background-color: white !important;
 }
