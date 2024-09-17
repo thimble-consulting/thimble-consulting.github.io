@@ -3,7 +3,9 @@
     "logoSrc": "../images/client-logos/walden.svg",
     "name": "Walden Local",
     "slug": "walden",
-    "heroText": "Walden Local Meat works directly with small-acreage farmers throughout the North-East, providing locally-grown, sustainable, humanely-raised meat to families via their subscription share program.",
+    "heroText": [
+      "Walden Local Meat works directly with small-acreage farmers throughout the North-East, providing locally-grown, sustainable, humanely-raised meat to families via their subscription share program."
+    ],
     "sections": [
       {
         "title": "Challenge",
@@ -109,7 +111,9 @@
     "logoSrc": "../images/client-logos/glossier.svg",
     "name": "Glossier",
     "slug": "glossier",
-    "heroText": "Glossier is a D2C brand that revolutionized the beauty industry with a refreshing ethos on beauty and a unique community-driven approach to marketing.",
+    "heroText": [
+      "Glossier is a D2C brand that revolutionized the beauty industry with a refreshing ethos on beauty and a unique community-driven approach to marketing."
+    ],
     "sections": [
       {
         "title": "Systems for Growth",
@@ -203,13 +207,16 @@
     "logoSrc": "../images/client-logos/casper-logo.png",
     "name": "Casper",
     "slug": "casper",
-    "heroText": "Casper transformed buying a mattress into a fun and memorable experience. With an innovative approach to marketing and customer experience and as one of the first brands to skyrocket into hyper growth, Casper was for years the de facto standard-bearer of how to run a successful D2C brand. Casper scaled to $500M+ in revenue within 6 years of launch and an IPO in 2020. The company was taken private in 2022.",
+    "heroText": [
+      "Casper transformed buying a mattress into a fun and memorable experience. With an innovative approach to marketing and customer experience and as one of the first brands to skyrocket into hyper growth, Casper was for years the de facto standard-bearer of how to run a successful D2C brand.",
+      "Casper scaled to $500M+ in revenue within 6 years of launch and an IPO in 2020. The company was taken private in 2022."
+    ],
     "sections": [
       {
         "title": "Hypergrowth",
         "parallaxLayers": [
           {
-            "content":[
+            "content": [
               "Thimble worked with Casper during its hyper growth and pre-IPO phases.",
               "We helped maintain and extend its fulfilment systems to support hyper growth, and to lay foundations to assist in getting the company IPO-ready.",
               "We worked across tech & finance to help deliver Casper’s first ERP integration. We also helped Casper implement its first wholesale partnerships with Target and others. We worked with Casper on these systems across two engagements, in 2016-2017 and in 2018-2019 leading up to its IPO."
@@ -287,14 +294,14 @@
     "logoSrc": "../images/client-logos/florence-logo.png",
     "name": "Florence",
     "slug": "florence",
-    "heroText": "",
+    "heroText": [],
     "sections": []
   },
   {
     "logoSrc": "../images/client-logos/felcana-logo.png",
     "name": "Felcana",
     "slug": "felcana",
-    "heroText": "",
+    "heroText": [],
     "sections": []
   }
 ]

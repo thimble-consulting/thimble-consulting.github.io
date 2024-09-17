@@ -7,7 +7,7 @@ const Hero = ({ client }) => {
     alt: `Logo of past client company, ${client.name}`,
     ...client.logoSrc,
   }
-
+  console.log(client.heroText);
   return (
     <ParallaxLayer
       offset={0}
@@ -21,9 +21,15 @@ const Hero = ({ client }) => {
       <div className={`flex flex-col w-1/3`}>
         {HeroImage(imgProps)}
 
-        <p className={`font-light m-auto text-xl text-center`}>
-          {client.heroText}
-        </p>
+        <div className={`font-light m-auto text-xl text-center`}>
+          {client.heroText.map(paragraph => {
+            return (
+              <p className="mb-5">
+                {paragraph}
+              </p>
+            )
+          })}
+        </div>
       </div>
     </ParallaxLayer>
   );
