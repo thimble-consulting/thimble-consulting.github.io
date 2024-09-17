@@ -22,7 +22,7 @@ const ClientLogo = ({alt, slug, publicURL, childImageSharp}) => {
   } else { // then it's an svg, see https://github.com/gatsbyjs/gatsby/issues/10297#issuecomment-464834529
     return (
       <Link to={`/clients/${slug}`}>
-        <div className="rounded-2xl overflow-hidden">
+        <div className="rounded-2xl overflow-hidden h-full">
           <img className="rounded-2xl" style={{ height: "100%" }} src={publicURL} alt={alt} />
         </div>
       </Link>
@@ -38,7 +38,7 @@ const PastClient = ({ name, slug, logoSrc }) => {
   }
 
   return (
-    <div className="h-full xs:h-auto xs:w-full aspect-square overflow-hidden drop-shadow-lg">
+    <div className="h-full xs:h-auto xs:w-full aspect-square overflow-hidden shadow-xl rounded-2xl">
       { ClientLogo(imgProps) }
     </div>
   )

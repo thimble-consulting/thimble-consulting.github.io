@@ -43,8 +43,8 @@ section:before {
 
 .embla__viewport {
   overflow: hidden;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .embla__container {

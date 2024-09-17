@@ -108,7 +108,7 @@
     ]
   },
   {
-    "logoSrc": "../images/client-logos/glossier.svg",
+    "logoSrc": "../images/client-logos/glossier.png",
     "name": "Glossier",
     "slug": "glossier",
     "heroText": [
@@ -204,7 +204,7 @@
     ]
   },
   {
-    "logoSrc": "../images/client-logos/casper-logo.png",
+    "logoSrc": "../images/client-logos/casper.svg",
     "name": "Casper",
     "slug": "casper",
     "heroText": [
@@ -291,14 +291,14 @@
     ]
   },
   {
-    "logoSrc": "../images/client-logos/florence-logo.png",
+    "logoSrc": "../images/client-logos/florence.webp",
     "name": "Florence",
     "slug": "florence",
     "heroText": [],
     "sections": []
   },
   {
-    "logoSrc": "../images/client-logos/felcana-logo.png",
+    "logoSrc": "../images/client-logos/felcana.png",
     "name": "Felcana",
     "slug": "felcana",
     "heroText": [],
