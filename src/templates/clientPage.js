@@ -40,6 +40,21 @@ export default function Index({pageContext}) {
       <Header className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8" />
       <ContactUsForm />
       <Hero client={client}></Hero>
+      <ParallaxLayer
+        sticky={{ start: 1, end: 15 }}
+        style={{
+          width: "40%",
+          inset: "0% 0% 0% 100%",
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'flex-end',
+          justifySelf: 'end',
+          zIndex: 10,
+          right: 0,
+        }}
+      >
+        {logo(imgProps)}
+      </ParallaxLayer>
       {client.sections.map(section => {
         offset = offset + section.parallaxLayers.length;
         return (
@@ -61,22 +76,6 @@ export default function Index({pageContext}) {
                   </p>
                 </div>
               </div>
-            </ParallaxLayer>
-
-            <ParallaxLayer
-              sticky={{ start: (offset - section.parallaxLayers.length), end: offset }}
-              style={{
-                width: "40%",
-                inset: "0% 0% 0% 100%",
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'flex-end',
-                justifySelf: 'end',
-                zIndex: offset,
-                right: 0,
-              }}
-            >
-              {logo(imgProps)}
             </ParallaxLayer>
 
             {section.parallaxLayers.map((parallaxLayer, index) => {
