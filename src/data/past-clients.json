@@ -105,7 +105,8 @@
           }
         ]
       }
-    ]
+    ],
+    "live": true
   },
   {
     "logoSrc": "../images/client-logos/glossier.png",
@@ -201,7 +202,8 @@
           }
         ]
       }
-    ]
+    ],
+    "live": true
   },
   {
     "logoSrc": "../images/client-logos/casper.svg",
@@ -288,20 +290,23 @@
           }
         ]
       }
-    ]
+    ],
+    "live": true
   },
   {
     "logoSrc": "../images/client-logos/florence.webp",
     "name": "Florence",
     "slug": "florence",
     "heroText": [],
-    "sections": []
+    "sections": [],
+    "live": false
   },
   {
     "logoSrc": "../images/client-logos/felcana.png",
     "name": "Felcana",
     "slug": "felcana",
     "heroText": [],
-    "sections": []
+    "sections": [],
+    "live": false
   }
 ]

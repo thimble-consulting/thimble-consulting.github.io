@@ -9,7 +9,7 @@ exports.createPages = ({ graphql, actions }) => {
   // Variables can be added as the second function parameter
   return graphql(`
     query PastClients {
-      allPastClientsJson {
+      allPastClientsJson(filter: {live: {eq: true}}) {
         edges {
           node {
             name
@@ -42,13 +42,15 @@ exports.createPages = ({ graphql, actions }) => {
     }
 
     result.data.allPastClientsJson.edges.forEach(edge => {
-      createPage({
-        path: `clients/${edge.node.slug}`,
+      let client = edge.node
+
+      return ( createPage({
+        path: `clients/${client.slug}`,
         component: clientPageTemplate,
         context: {
-          client: edge.node
+          client: client
         },
-      })
+      }))
     })
   })
 }
