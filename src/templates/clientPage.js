@@ -43,9 +43,18 @@ export default function Index({pageContext}) {
     y: '100%',
   }))
 
-  const { scrollYProgress } = useScroll({
-    container: parallaxRef
-  })
+  // const { scrollYProgress } = useScroll({
+  //   container: parallaxRef
+  // })
+
+  // useEffect(() => {
+  //   const parallax = parallaxRef.current;
+  //   if (parallax) {
+  //     const { scrollYProgress } = useScroll({
+  //       container: parallaxRef
+  //     })
+  //   }
+  // }, [useScroll]);
 
   // config 2 - works, will jump to page index
   // const [parallaxRef, setParallaxRef] = useState(null);
@@ -121,7 +130,7 @@ export default function Index({pageContext}) {
 
 
             {/* config 1 */}
-              <animated.div
+              {/* <animated.div
                 className="dot"
                 style={{
                   clipPath: scrollYProgress.to(val => `circle(${val * 100}%)`),
@@ -134,7 +143,7 @@ export default function Index({pageContext}) {
                     <animated.span style={textStyles}>You found me!</animated.span>
                   </span>
                 </h1>
-              </animated.div>
+              </animated.div> */}
             {/* config 1 */}
 
             {section.parallaxLayers.map((parallaxLayer, index) => {
