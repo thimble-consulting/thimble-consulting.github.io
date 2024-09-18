@@ -7,7 +7,7 @@ const Hero = ({ client }) => {
     alt: `Logo of past client company, ${client.name}`,
     ...client.logoSrc,
   }
-  console.log(client.heroText);
+
   return (
     <ParallaxLayer
       offset={0}
