@@ -194,3 +194,24 @@ section:before {
 .detail-container p {
   margin-bottom: 1.5rem;
 }
+
+.hero-walden {
+  @apply bg-walden-green;
+  @apply text-white;
+}
+
+.hero-casper {
+  @apply bg-white;
+}
+
+.hero-glossier {
+  @apply bg-white;
+}
+
+.hero-felcana {
+  @apply bg-white;
+}
+
+.hero-florence {
+  @apply bg-white;
+}

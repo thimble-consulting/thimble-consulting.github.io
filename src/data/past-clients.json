@@ -107,7 +107,7 @@
         ]
       }
     ],
-    "live": false
+    "live": true
   },
   {
     "logoSrc": "../images/client-logos/casper.svg",
@@ -159,7 +159,7 @@
         ]
       }
     ],
-    "live": false
+    "live": true
   },
   {
     "logoSrc": "../images/client-logos/florence.webp",
