@@ -1,5 +1,5 @@
 import React from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Link } from "gatsby";
 import ContactUsButton from "../ContactUsButton";
 
 const Header = ({ className = "" }) => (
@@ -14,18 +14,18 @@ const Header = ({ className = "" }) => (
         Thimble
       </a>
       <div className="flex items-center mt-4 sm:mt-0 flex-row gap-4">
-        <AnchorLink
+        <Link
           className="text-black hover:text-thimble"
-          href="#approach"
+          href="/#approach"
         >
           Approach
-        </AnchorLink>
-        <AnchorLink
+        </Link>
+        <Link
           className="text-black hover:text-thimble"
-          href="#services"
+          href="/#services"
         >
           Services
-        </AnchorLink>
+        </Link>
         <div className="hidden md:block">
           <ContactUsButton className="text-sm">
             Contact Us
