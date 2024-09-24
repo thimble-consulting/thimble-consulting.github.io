@@ -37,6 +37,9 @@
     "react-modal": "3.16.1",
     "@heroicons/react": "2.1.5"
   },
+  "optionalDependencies": {
+    "@parcel/watcher-linux-x64-glibc": "^2.4.0"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "gatsby-plugin-postcss": "^6.13.1",

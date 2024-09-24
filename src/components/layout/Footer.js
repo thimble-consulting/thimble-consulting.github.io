@@ -1,5 +1,5 @@
 import React from "react";
-import SvgLinkedIn from "../../svg/SvgLinkedIn";
+import SvgLinkedIn from "../../svg/SvgLinkedin";
 import SvgGithub from "../../svg/SvgGithub";
 
 const Footer = ({ className = "" }) => (
