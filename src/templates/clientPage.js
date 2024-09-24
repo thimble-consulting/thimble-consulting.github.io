@@ -6,6 +6,13 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import Hero from "../components/Parallax/Hero.js";
 import Header from "../components/layout/Header.js";
 import ContactUsForm from "../components/ContactUsForm.js";
+import {
+  PrevButton,
+  NextButton,
+  onNextButtonClick,
+  onPrevButtonClick,
+  getCurrentPage
+} from "../components/clients/ClientPageArrowButtons.jsx"
 
 export default function Index({pageContext}) {
   const { client } = pageContext
@@ -59,87 +66,90 @@ export default function Index({pageContext}) {
   }, [])
 
   return (
-    <Parallax pages={PAGES} ref={parallaxRef} >
-      <Header className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8" />
-      <ContactUsForm />
-      <Hero client={client}></Hero>
-      <ParallaxLayer
-        sticky={{ start: HERO_OFFSET, end: PAGES }}
-        style={{
-          width: "40%",
-          inset: "0% 0% 0% 100%",
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'flex-end',
-          justifySelf: 'end',
-          zIndex: zIndexOffset++,
-          right: 0,
-        }}
-      >
-        <div className="mr-20 w-full">
-          {logo(imgProps)}
-        </div>
-      </ParallaxLayer>
+    <>
+      <div className='fixed bottom-0 right-0 z-50 flex p-5'>
+        <PrevButton onClick={(e) => onPrevButtonClick(parallaxRef)} className='p-5' />
+        <NextButton onClick={(e) => onNextButtonClick(parallaxRef)} className='p-5' />
+      </div>
+      <Parallax pages={PAGES} ref={parallaxRef}>
+        <Header className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8" />
+        <ContactUsForm />
+        <Hero client={client}></Hero>
 
-      <ParallaxLayer
-        style={{
-          width: "full",
-          height: "1rem",
-          display: 'flex',
-          alignItems: 'start',
-          justifyContent: 'center',
-          zIndex: PAGES + 10,
-        }}
-        className="subHeader"
-        sticky={{ start: HERO_OFFSET, end: PAGES }}>
-        <div className="flex bg-gray-100 py-8 px-20 w-full uppercase text-xl font-light tracking-wider text-gray-800">
-          {transitions((style, i) => {
-            const Page = subHeadings[i]
-            return <Page style={style} />
-          })}
-        </div>
-      </ParallaxLayer>
-      {client.sections.map(section => {
-        return (
-          <>
-            {section.parallaxLayers.map((parallaxLayer, index) => {
-              return(
-                <ParallaxLayer
-                  style={{
-                    width: "60%",
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    textAlign: "center",
-                    zIndex: zIndexOffset++,
-                  }}
-                                    // sticky={{
-                  //   start: parallaxLayer.parallaxParams.stickyStart,
-                  //   end: parallaxLayer.parallaxParams.stickyEnd
-                  // }}>
+        <ParallaxLayer
+          sticky={{ start: HERO_OFFSET, end: PAGES }}
+          style={{
+            width: "40%",
+            inset: "0% 0% 0% 100%",
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-end',
+            justifySelf: 'end',
+            zIndex: zIndexOffset++,
+            right: 0,
+          }}
+        >
+          <div className="mr-20 w-full">
+            {logo(imgProps)}
+          </div>
+        </ParallaxLayer>
 
-                  offset={ parallaxLayer.parallaxParams.stickyStart }>
-                  <div className={`flex flex-col justify-around gap-10 mx-20`}>
-                    {parallaxLayer.content.map((paragraph, index) => {
-                      index++;
-                      return(
-                        <div
-                          style={{
-                            zIndex: index,
-                          }}
-                          className="slideText">
-                          {paragraph}
-                        </div>
-                      )
-                    })}
-                  </div>
-                </ParallaxLayer>
-              )
+        <ParallaxLayer
+          style={{
+            width: "full",
+            height: "1rem",
+            display: 'flex',
+            alignItems: 'start',
+            justifyContent: 'center',
+            zIndex: PAGES + 10,
+          }}
+          className="subHeader"
+          sticky={{ start: HERO_OFFSET, end: PAGES }}>
+          <div className="flex bg-gray-100 py-8 px-20 w-full uppercase text-xl font-light tracking-wider text-gray-800">
+            {transitions((style, i) => {
+              const Page = subHeadings[i]
+              return <Page style={style} />
             })}
-          </>
-        )
-      })}
-    </Parallax>
+          </div>
+        </ParallaxLayer>
+        {client.sections.map(section => {
+          return (
+            <>
+              {section.parallaxLayers.map((parallaxLayer, index) => {
+                return(
+                  <ParallaxLayer
+                    style={{
+                      width: "60%",
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      textAlign: "center",
+                      zIndex: zIndexOffset++,
+                    }}
+
+                    offset={ parallaxLayer.parallaxParams.stickyStart }>
+                    <div className={`flex flex-col justify-around gap-10 mx-20`}>
+                      {parallaxLayer.content.map((paragraph, index) => {
+                        index++;
+                        return(
+                          <div
+                            style={{
+                              zIndex: index,
+                            }}
+                            className="slideText">
+                            {paragraph}
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </ParallaxLayer>
+                )
+              })}
+            </>
+          )
+        })}
+      </Parallax>
+    </>
   )
 }
 
@@ -178,11 +188,4 @@ const getTransitionConfig = (subHeaderNum, previousSubHeader) => {
       leave: { position: 'absolute', opacity: 0, transform: 'translate3d(100%,0,0)' },
     };
   }
-};
-
-const getCurrentPage = (parallaxRef) => {
-  const containerHeight = parallaxRef.current.space
-  const scrollYProgressRAW = parallaxRef.current.current / containerHeight
-  const scrollYProgress = Math.round(scrollYProgressRAW * 10) / 10
-  return scrollYProgress;
 };
