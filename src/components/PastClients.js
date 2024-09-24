@@ -1,39 +1,44 @@
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import EmblaAutoScrollCarousel from "./embla/EmblaAutoScrollCarousel";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 
 const OPTIONS = { slidesToScroll: "auto", loop: true };
 
-const ClientLogo = ({alt, publicURL, childImageSharp}) => {
+const ClientLogo = ({alt, slug, publicURL, childImageSharp}) => {
   if (childImageSharp) {
     return (
-      <GatsbyImage
-        className="h-full xs:h-auto xs:w-full aspect-square rounded-2xl"
-        imgStyle={{
-          objectFit: "contain",
-        }}
-        image={childImageSharp.gatsbyImageData}
-        alt={alt}
-      />
+      <Link to={`/clients/${slug}`}>
+        <GatsbyImage
+          className="h-full xs:h-auto xs:w-full aspect-square rounded-2xl"
+          imgStyle={{
+            objectFit: "contain",
+          }}
+          image={childImageSharp.gatsbyImageData}
+          alt={alt}
+        />
+      </Link>
     )
   } else { // then it's an svg, see https://github.com/gatsbyjs/gatsby/issues/10297#issuecomment-464834529
     return (
-      <div className="rounded-2xl overflow-hidden">
-        <img className="rounded-2xl" style={{ height: "100%" }} src={publicURL} alt={alt} />
-      </div>
+      <Link to={`/clients/${slug}`}>
+        <div className="rounded-2xl overflow-hidden h-full">
+          <img className="rounded-2xl" style={{ height: "100%" }} src={publicURL} alt={alt} />
+        </div>
+      </Link>
     )
   }
 }
 
-const PastClient = ({ name, logoSrc }) => {
+const PastClient = ({ name, slug, logoSrc }) => {
   const imgProps = {
     alt: `Logo of past client company, ${name}`,
+    slug: slug,
     ...logoSrc,
   }
 
   return (
-    <div className="h-full xs:h-auto xs:w-full aspect-square overflow-hidden drop-shadow-lg">
+    <div className="h-full xs:h-auto xs:w-full aspect-square overflow-hidden shadow-xl rounded-2xl">
       { ClientLogo(imgProps) }
     </div>
   )
@@ -46,6 +51,7 @@ const PastClients = () => {
         edges {
           node {
             name
+            slug
             logoSrc {
               id
               publicURL
@@ -59,8 +65,8 @@ const PastClients = () => {
     }
   `)
 
-  const slides = queryData.allPastClientsJson.edges.map(({ node: { name, logoSrc } }) => (
-    PastClient({ name, logoSrc })
+  const slides = queryData.allPastClientsJson.edges.map(({ node: { name, slug, logoSrc, } }) => (
+    PastClient({ name, slug, logoSrc })
   ))
 
   return (

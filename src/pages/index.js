@@ -57,7 +57,7 @@ const Index = () => {
         <p className="text-xl mt-6 font-light">
           We've brought this approach to businesses in the U.S. and the U.K, including:
         </p>
-        <div className="mt-8">
+        <div className="mt-4">
           <PastClients />
         </div>
       </section>

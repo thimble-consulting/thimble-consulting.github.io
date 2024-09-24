@@ -1,22 +1,312 @@
 [
   {
     "logoSrc": "../images/client-logos/walden.svg",
-    "name": "Walden Local"
+    "name": "Walden Local",
+    "slug": "walden",
+    "heroText": [
+      "Walden Local Meat works directly with small-acreage farmers throughout the North-East, providing locally-grown, sustainable, humanely-raised meat to families via their subscription share program."
+    ],
+    "sections": [
+      {
+        "title": "Challenge",
+        "parallaxLayers": [
+          {
+            "content":  [
+              "Thimble connected with Walden in late 2019, at a time when lengthening development cycles were leading Walden to feel unable to evolve the product offerings and core experience available its customers."
+            ],
+            "parallaxParams": {
+              "stickyStart": 1,
+              "stickyEnd": 1.5
+            }
+          },
+          {
+            "content":  [
+              "Thimble helped Walden overcome this slowdown by standardizing and simplifying its technology footprint. We helped assess their tech challenges and charted out how the business could adapt to run on a standard e-comm platform. We successfully worked through this migration, partnering with stakeholders to adapt the necessary parts of the business’ operations and member experience.",
+              "Leveraging these changes, we then worked with Walden to explore new product experiences for members, opening up new revenue streams while helping onboard industry-standard practices for testing, landing page optimization, data warehousing and dev ops."
+            ],
+            "parallaxParams": {
+              "stickyStart": 2,
+              "stickyEnd": 2.5
+            }
+          }
+        ]
+      },
+      {
+        "title": "Overcoming the Slowdown",
+        "parallaxLayers": [
+          {
+            "content":  [
+              "Walden’s supply chain starts directly with its farmers, stretching from processing & flash-freezing its meats to running its own warehouse and delivery fleet. It wasn’t clear internally whether the technology challenges Walden faced just reflected complexities inherent to the business, or if there was a better approach."
+            ],
+            "parallaxParams": {
+              "stickyStart": 3,
+              "stickyEnd": 3.5
+            }
+          },
+          {
+            "content":  [
+              "Thimble’s initial engagement was to dive directly into this question and help assess these options. We onboarded into the current custom tech solutions and built up to a detailed understanding of Walden’s unique and complex operations. We laid out ways to enable simpler, more standard architectures and the key parts of the company’s product experience and operation that would be needed to enable these standardizations."
+            ],
+            "parallaxParams": {
+              "stickyStart": 4,
+              "stickyEnd": 4.5
+            }
+          },
+          {
+            "content":  [
+            "From this, we laid out two main approaches to simplifying to the business: starting on the operations side, or starting with the e-commerce side. It was decided to opt for the e-comm first approach, on a headless BigCommerce architecture. This featured a main Walden-managed service running alongside BigCommerce, to support a few unique parts of Walden’s product and operations structure that were necessary to retain.",
+            "Walden was successfully migrated to this new architecture in October, 2021."
+            ],
+            "parallaxParams": {
+              "stickyStart": 5,
+              "stickyEnd": 5.5
+            }
+          }
+        ]
+      },
+      {
+        "title": "New Pastures",
+        "parallaxLayers": [
+          {
+            "content":  [
+              "With the new platform in place, we helped Walden start to flex the ability to test out new product offerings and revenue streams. We enabled Walden to allow for à la carte orders and offer holiday order experiences multiple times per year, in parallel to the base subscription. This was a significant win for the business to enable efforts to drive incremental revenue. Previously, the business could only offer one holiday order, Thanksgiving, once per year, in place of a subscription order, and had no other incremental purchase capabilities. Walden leveraged this flexibility and ultimately started running 4 holiday orders per year, in addition to growing its à la carte order revenue."
+            ],
+            "parallaxParams": {
+              "stickyStart": 6,
+              "stickyEnd": 6.5
+            }
+          },
+          {
+            "content":  [
+              "Having built in foundations for their new setup to be adaptable to change, we helped Walden experiment with changes to their core subscription product. We enabled Walden to have the offer certain meats like lamb as an upsell to customers, and later offer seafood in their core subscription. We also helped Walden offer sign-up discounts & promotions, shift to a structure where it could offer any product in its catalog via a subscription, and deliver a complete rebranding of the customer-facing site."
+            ],
+            "parallaxParams": {
+              "stickyStart": 7,
+              "stickyEnd": 7.5
+            }
+          },
+          {
+            "content":  [
+              "On the operations & customer experience side, we helped Walden continue to simplify by expanding and adapting the tools for these teams to be self-service. This included tools for areas like order management and delivery planning, with one example being a tool to plan for weather-based delivery delays."
+            ],
+            "parallaxParams": {
+              "stickyStart": 8,
+              "stickyEnd": 8.5
+            }
+          },
+          {
+            "content":  [
+              "In parallel, we introduced new tooling and infrastructure to help Walden modernize its marketing and analytics departments. We introduced their first A/B testing frameworks and new product analytics tools to enable Walden to take a data-driven approach to conversion optimization and landing page improvements. We helped Walden introduce a central data warehouse to its systems and adopt new tools for extracting and organizing their analytics."
+            ],
+            "parallaxParams": {
+              "stickyStart": 9,
+              "stickyEnd": 9.5
+            }
+          }
+        ]
+      }
+    ],
+    "live": true
   },
   {
-    "logoSrc": "../images/client-logos/glossier.svg",
-    "name": "Glossier"
+    "logoSrc": "../images/client-logos/glossier.png",
+    "name": "Glossier",
+    "slug": "glossier",
+    "heroText": [
+      "Glossier is a D2C brand that revolutionized the beauty industry with a refreshing ethos on beauty and a unique community-driven approach to marketing."
+    ],
+    "sections": [
+      {
+        "title": "Systems for Growth",
+        "parallaxLayers": [
+          {
+            "content": [
+              "Thimble worked with Glossier from 2019 to 2022, at the time of the company’s meteoric growth to $100M+ in revenue.",
+              "In our work with Glossier, we helped add and extend fulfilment systems to support the company’s growth. We also led a cross-functional initiative across Finance, Data, and Tech to resolve challenges in running the company’s bookkeeping, delivering a reliable, audit-ready data pipeline, enabling new reconciliation processes and improvements to the company’s time to month close."
+            ],
+            "parallaxParams": {
+              "stickyStart": 1,
+              "stickyEnd": 1.5
+            }
+          }
+        ]
+      },
+      {
+        "title": "Fulfilment Technology",
+        "parallaxLayers": [
+          {
+            "content": [
+              "Leading up to 2019, Glossier’s had been managing its operations and outgoing fulfilment on a relatively limited set of systems.",
+              "Thimble was brought on board to help and extend to these systems, to enable Glossier to continue to scale and reduce manual work."
+            ],
+            "parallaxParams": {
+              "stickyStart": 2,
+              "stickyEnd": 2.5
+            }
+          },
+          {
+            "content": [
+              "Thimble initially embedded two engineers into the back-of-house tech team, working to add more automated integrations in to its fulfilment process.",
+              "We introduced Glossier’s first end-to-end integration to power its on-site inventory counts back to its 3PL systems. We then progressively extended these systems to continue to support Glossier’s growth, adding features to automate SKU selection, shipment planning, and more."
+            ],
+            "parallaxParams": {
+              "stickyStart": 3,
+              "stickyEnd": 3.5
+            }
+          },
+          {
+            "content":           [
+              "We played a key role in assessing, integrating, and launching with a new 3PL partner as part of Glossier’s international expansion in the UK.",
+              "We also worked on system readiness for peak season, testing and optimizing existing systems in ‘19 and ‘20, and helping to put a new, higher-volume set of fulfilment systems in place for peak season ‘21."
+            ],
+            "parallaxParams": {
+              "stickyStart": 4,
+              "stickyEnd": 4.5
+            }
+          }
+        ]
+      },
+      {
+        "title": "Finance Challenges",
+        "parallaxLayers": [
+          {
+            "content": [
+              "In 2020, Glossier’s CFO flagged urgent needs to improve how the company’s accounting processes were coping with its top-line revenue growth.",
+              "This included driving a faster month-close, enabling the company to run an orders-to-cash reconciliation process, and ensuring the data & processes behind Glossier’s bookkeeping be demonstrably audit-ready.",
+              "With finance & accounting expertise built up in our work with Casper, Thimble was able to step in to help evaluate the challenges posed and possible solutions."
+            ],
+            "parallaxParams": {
+              "stickyStart": 5,
+              "stickyEnd": 5.5
+            }
+          },
+          {
+            "content": [
+              "Thimble worked cross-functionally across Finance, Data, and Tech to build a deep understanding of Glossier’s financial processes and define ways to solve this challenge.",
+              "We then worked to build and deliver, within 6 months, a financial data pipeline that achieved the initial goals of being reliable, audit-ready, and able to support order to cash matching."
+            ],
+            "parallaxParams": {
+              "stickyStart": 6,
+              "stickyEnd": 6.5
+            }
+          },
+          {
+            "content": [
+            "As we brought online initial parts of the data pipeline, we worked with Data & Finance to validate the pipeline’s reliability and assist in their work to shift processes to the new system.",
+            "We then leveraged the data and insights from this system to identify & resolve improvements across the company’s ordering and fulfilment systems, reducing financial and tax gaps and standardizing customer experience processes, which helped the finance team reduce the company’s month-close."
+            ],
+            "parallaxParams": {
+              "stickyStart": 7,
+              "stickyEnd": 7.5
+            }
+          }
+        ]
+      }
+    ],
+    "live": true
   },
   {
-    "logoSrc": "../images/client-logos/casper-logo.png",
-    "name": "Casper"
+    "logoSrc": "../images/client-logos/casper.svg",
+    "name": "Casper",
+    "slug": "casper",
+    "heroText": [
+      "Casper transformed buying a mattress into a fun and memorable experience. With an innovative approach to marketing and customer experience and as one of the first brands to skyrocket into hyper growth, Casper was for years the de facto standard-bearer of how to run a successful D2C brand.",
+      "Casper scaled to $500M+ in revenue within 6 years of launch and an IPO in 2020. The company was taken private in 2022."
+    ],
+    "sections": [
+      {
+        "title": "Hypergrowth",
+        "parallaxLayers": [
+          {
+            "content": [
+              "Thimble worked with Casper during its hyper growth and pre-IPO phases.",
+              "We helped maintain and extend its fulfilment systems to support hyper growth, and to lay foundations to assist in getting the company IPO-ready.",
+              "We worked across tech & finance to help deliver Casper’s first ERP integration. We also helped Casper implement its first wholesale partnerships with Target and others. We worked with Casper on these systems across two engagements, in 2016-2017 and in 2018-2019 leading up to its IPO."
+            ],
+            "parallaxParams": {
+              "stickyStart": 1,
+              "stickyEnd": 1.5
+            }
+          }
+        ]
+      },
+      {
+        "title": "Maturing Fulfilment Systems",
+        "parallaxLayers": [
+          {
+            "content": [
+              "When Thimble was initially brought on, Casper was looking for help fostering a pragmatic approach to maintaining its larger software applications through hyper growth.",
+              "We embedded directly in the team, working hand in hand to iteratively extend its main applications while improving code quality, application structure, and maintainability."
+            ],
+            "parallaxParams": {
+              "stickyStart": 2,
+              "stickyEnd": 2.5
+            }
+          },
+          {
+            "content": [
+              "In this work, we worked to build and maintain features across the whole fulfilment domain, including features like planning the shipments for orders would be split into and where to fulfill from. We also managed integrations with warehouse partners and outgoing fulfilment providers. We also maintained customer service tools for managing orders."
+            ],
+            "parallaxParams": {
+              "stickyStart": 3,
+              "stickyEnd": 3.5
+            }
+          },
+          {
+            "content": [
+              "In early 2017, we also worked to enable Casper’s first wholesale partnership, with Target. Using EDI via SPS Commerce, this work integrated wholesale orders into Casper’s fulfilment and accounting systems, logging, planning and then fulfilling these orders. We later expanded on this work to enable other retail relationships with Hudson Bay Company and Amazon."
+            ],
+            "parallaxParams": {
+              "stickyStart": 4,
+              "stickyEnd": 4.5
+            }
+          }
+        ]
+      },
+      {
+        "title": "IPO-Readiness",
+        "parallaxLayers": [
+          {
+            "content": [
+              "In mid 2016, Casper began a number of initiatives to transition to being IPO-ready, including an aim to onboard an ERP.",
+              "Thimble played a key leadership role in this effort, helping Casper and its ERP partner successfully integrate an ERP in a modern tech stack."
+            ],
+            "parallaxParams": {
+              "stickyStart": 5,
+              "stickyEnd": 5.5
+            }
+          },
+          {
+            "content": [
+              "Casper selected Oracle’s JD Edwards ERP (JDE) and an ERP consultancy for the project.",
+              "However, a clear roadmap of where and how to bring JDE into Casper’s existing e-comm and fulfilment systems was proving elusive, and implementation work was not yet able to begin.",
+              "We stepped in and worked cross-functionally with the finance department and the ERP consultants to turn the project around. In the initial work, we produced a detailed view of what data would be needed across all of Casper’s business transactions, for a successful integration. We built this view working closely with Finance to understand how Casper ran its current accounting processes. We then went step by step through each process with specialists from the ERP side to detail what entries would look like. We leveraged this work and our knowledge of Casper’s tech systems to lay out a roadmap to a successful first implementation, and then worked through each stage of the implementation to a successful launch.",
+              "In our second engagement with Casper we worked to further improve and expand these systems."
+            ],
+            "parallaxParams": {
+              "stickyStart": 6,
+              "stickyEnd": 6.5
+            }
+          }
+        ]
+      }
+    ],
+    "live": true
   },
   {
-    "logoSrc": "../images/client-logos/florence-logo.png",
-    "name": "Florence"
+    "logoSrc": "../images/client-logos/florence.webp",
+    "name": "Florence",
+    "slug": "florence",
+    "heroText": [],
+    "sections": [],
+    "live": false
   },
   {
-    "logoSrc": "../images/client-logos/felcana-logo.png",
-    "name": "Felcana"
+    "logoSrc": "../images/client-logos/felcana.png",
+    "name": "Felcana",
+    "slug": "felcana",
+    "heroText": [],
+    "sections": [],
+    "live": false
   }
 ]

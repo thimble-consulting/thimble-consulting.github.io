@@ -17,6 +17,11 @@
   },
   "dependencies": {
     "@fillout/react": "^1.1.1",
+    "@heroicons/react": "2.1.5",
+    "@react-spring/parallax": "^9.7.4",
+    "@react-spring/web": "^9.7.4",
+    "@uidotdev/usehooks": "^2.4.1",
+    "dotenv": "^16.4.5",
     "embla-carousel-auto-scroll": "^8.1.8",
     "embla-carousel-react": "^8.1.8",
     "gatsby": "^5.13.0",
@@ -32,10 +37,10 @@
     "react": "^18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.2.0",
-    "sass": "^1.55.0",
-    "sanitize-html": "2.13.0",
-    "react-modal": "3.16.1",
-    "@heroicons/react": "2.1.5"
+    "react-modal": "^3.16.1",
+    "react-scroll-parallax": "^3.4.5",
+    "sanitize-html": "^2.13.0",
+    "sass": "^1.55.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
