@@ -2,11 +2,11 @@ name: Build and Deploy
 
 on:
   push:
-    branches: auto-deploy
+    branches: master
 
 jobs:
-  build-and-deploy:
-    name: Build and deploy Gatsby site
+  build:
+    name: Build gatsby site
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -20,7 +20,24 @@ jobs:
         run: npm ci
 
       - name: Build & deploy
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          npm run deploy
+        run: npm run build
+  deploy:
+    needs: build
+
+    name: Deploy gatsby site
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
