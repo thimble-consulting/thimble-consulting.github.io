@@ -9,6 +9,10 @@ a:hover {
   @apply text-weblink-blue-darker;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 section:before {
   content: '';
   display: block;
