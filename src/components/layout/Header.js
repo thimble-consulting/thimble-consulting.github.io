@@ -8,7 +8,7 @@ const Header = ({ className = "" }) => (
       className={`${className} flex flex-col sm:flex-row justify-between items-center py-4`}
     >
       <a
-        href="/"
+        href="/#top"
         className="flex flex-grow items-center font-serif font-black italic text-thimble hover:text-thimble lowercase text-4xl"
       >
         Thimble
