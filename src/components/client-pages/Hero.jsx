@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { ParallaxLayer } from '@react-spring/parallax';
 import { GatsbyImage } from "gatsby-plugin-image";
 
 const Hero = ({ client }) => {
