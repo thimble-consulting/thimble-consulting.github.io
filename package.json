@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@fillout/react": "^1.1.1",
+    "@heroicons/react": "2.1.5",
     "embla-carousel-auto-scroll": "^8.1.8",
     "embla-carousel-react": "^8.1.8",
     "gatsby": "^5.13.0",
@@ -31,10 +32,9 @@
     "gatsby-transformer-sharp": "^5.13.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.55.0",
-    "sanitize-html": "2.13.0",
     "react-modal": "3.16.1",
-    "@heroicons/react": "2.1.5"
+    "sanitize-html": "2.13.0",
+    "sass": "^1.55.0"
   },
   "optionalDependencies": {
     "@parcel/watcher-linux-x64-glibc": "^2.4.0"

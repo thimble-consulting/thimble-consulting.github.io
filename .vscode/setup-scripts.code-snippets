@@ -1,0 +1,17 @@
+{
+  "Set up a react component": {
+    "prefix": "setup-react",
+    "scope": "javascript",
+    "body": [
+      "import React from \"react\";",
+      "",
+      "const $TM_FILENAME_BASE = () => {",
+      "  return (",
+      "  );",
+      "};",
+      "",
+      "export default $TM_FILENAME_BASE;"
+    ],
+    "description": "Set up a file with the react basics"
+  }
+}
