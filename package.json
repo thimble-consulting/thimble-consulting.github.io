@@ -18,33 +18,33 @@
   },
   "dependencies": {
     "@fillout/react": "^1.1.1",
-    "@heroicons/react": "2.1.5",
+    "@heroicons/react": "2.2.0",
     "embla-carousel-auto-scroll": "^8.1.8",
     "embla-carousel-react": "^8.1.8",
-    "gatsby": "^5.14.5",
+    "gatsby": "^5.16.1",
     "gatsby-omni-font-loader": "^2.0.2",
-    "gatsby-plugin-image": "^3.14.0",
-    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-image": "^3.16.0",
+    "gatsby-plugin-manifest": "^5.16.0",
     "gatsby-plugin-piwik-pro": "^1.2.0",
-    "gatsby-plugin-sharp": "^5.14.0",
-    "gatsby-plugin-sitemap": "^6.13.1",
-    "gatsby-source-filesystem": "^5.14.0",
-    "gatsby-transformer-json": "^5.13.1",
-    "gatsby-transformer-sharp": "^5.14.0",
+    "gatsby-plugin-sharp": "^5.16.0",
+    "gatsby-plugin-sitemap": "^6.16.0",
+    "gatsby-source-filesystem": "^5.16.0",
+    "gatsby-transformer-json": "^5.16.0",
+    "gatsby-transformer-sharp": "^5.16.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-modal": "3.16.1",
-    "sanitize-html": "2.13.0",
-    "sass": "^1.55.0"
+    "react-modal": "3.16.3",
+    "sanitize-html": "2.17.3",
+    "sass": "^1.99.0"
   },
   "optionalDependencies": {
-    "@parcel/watcher-linux-x64-glibc": "^2.4.0"
+    "@parcel/watcher-linux-x64-glibc": "^2.5.6"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "gatsby-plugin-postcss": "^6.13.1",
+    "autoprefixer": "^10.5.0",
+    "gatsby-plugin-postcss": "^6.16.0",
     "gh-pages": "^6.1.0",
-    "postcss": "^8.4.40",
+    "postcss": "^8.5.10",
     "postcss-reporter": "^7.1.0",
     "tailwindcss": "^3.4.7"
   }
