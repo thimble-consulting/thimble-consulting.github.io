@@ -17,24 +17,24 @@
   },
   "dependencies": {
     "@fillout/react": "^1.1.1",
+    "@heroicons/react": "2.1.5",
     "embla-carousel-auto-scroll": "^8.1.8",
     "embla-carousel-react": "^8.1.8",
-    "gatsby": "^5.13.0",
+    "gatsby": "^5.14.5",
     "gatsby-omni-font-loader": "^2.0.2",
-    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-image": "^3.14.0",
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-piwik-pro": "^1.2.0",
-    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-plugin-sharp": "^5.14.0",
     "gatsby-plugin-sitemap": "^6.13.1",
-    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-source-filesystem": "^5.14.0",
     "gatsby-transformer-json": "^5.13.1",
-    "gatsby-transformer-sharp": "^5.13.1",
+    "gatsby-transformer-sharp": "^5.14.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.55.0",
-    "sanitize-html": "2.13.0",
     "react-modal": "3.16.1",
-    "@heroicons/react": "2.1.5"
+    "sanitize-html": "2.13.0",
+    "sass": "^1.55.0"
   },
   "optionalDependencies": {
     "@parcel/watcher-linux-x64-glibc": "^2.4.0"
