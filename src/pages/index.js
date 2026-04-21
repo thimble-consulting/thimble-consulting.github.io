@@ -45,17 +45,23 @@ const Index = () => {
           What we do
         </h2>
         <p className="text-xl mt-6 font-light">
-          Good software starts with an understanding of the business it serves. Our work
-          is rooted in understanding how a company operates and accounts for what it does
+          For the past ten years, we've helped startups across the U.S. and U.K. build
+          and maintain ecommerce, operations and accounting software and enable their
+          business growth.
+        </p>
+        <p className="text-xl mt-6 font-light">
+          We believe great software is rooted in an understanding of the business it
+          serves. We dive deep into how a company operates and accounts for what it does
           — and where gaps between systems and reality create friction.
         </p>
         <p className="text-xl mt-6 font-light">
-          We partner with growing tech-enabled companies to build and grow those systems
-          — across warehouse and fulfilment operations, orders-to-cash processes, and the
-          financial and operational systems that need to hold together as a business scales.
+          We then put in the work — building and evolving these systems across warehouse
+          and fulfilment operations, orders-to-cash processes, and working with our
+          clients to build out their financial and operational infrastructure and hold
+          things together through scale.
         </p>
         <p className="text-xl mt-6 font-light">
-          We've brought this approach to businesses in the U.S. and the U.K., including:
+          We've brought this approach to businesses including:
         </p>
         <div className="mt-8">
           <PastClients />
