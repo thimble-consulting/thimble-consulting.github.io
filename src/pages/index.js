@@ -45,17 +45,17 @@ const Index = () => {
           What we do
         </h2>
         <p className="text-xl mt-6 font-light">
-          Our approach is to use a deep understanding of each business, from its product,
-          roadmap, and operations, to drive a pragmatic approach to the software
-          & systems that power it.
+          Good software starts with an understanding of the business it serves. Our work
+          is rooted in understanding how a company operates and accounts for what it does
+          — and where gaps between systems and reality create friction.
         </p>
         <p className="text-xl mt-6 font-light">
-          We work with growing tech-enabled businesses, from start-up to IPO. Our most
-          recent work has largely focused on D2C e-commerce, with previous projects in
-          marketplace platforms and more.
+          We partner with growing tech-enabled companies to build and grow those systems
+          — across warehouse and fulfilment operations, orders-to-cash processes, and the
+          financial and operational systems that need to hold together as a business scales.
         </p>
         <p className="text-xl mt-6 font-light">
-          We've brought this approach to businesses in the U.S. and the U.K, including:
+          We've brought this approach to businesses in the U.S. and the U.K., including:
         </p>
         <div className="mt-8">
           <PastClients />
@@ -66,7 +66,7 @@ const Index = () => {
           For every stage of business
         </h2>
         <p className="text-xl mt-6 font-light">
-          We work with businesses at every stage of growth, adapting our approach into three main phases:
+          We work with businesses at every stage of growth — from early-stage startups through to pre-IPO — adapting our approach to what each stage actually needs:
         </p>
       </section>
       <SplitSection
@@ -97,9 +97,9 @@ const Index = () => {
               Scale-Up Operations
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              With high-growth clients, we help put in place systems to scale
-              back-of-house operations, enabling clients continue to grow
-              top-line revenue with confidence they can continue to scale.
+              With high-growth clients, the work is about keeping systems in step
+              with a rapidly scaling business — so that growth in revenue doesn't
+              outpace the operations and financial infrastructure behind it.
             </p>
           </div>
         }
