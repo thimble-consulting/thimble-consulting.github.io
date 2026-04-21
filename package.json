@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "develop": "gatsby develop -p 8000",
+    "develop:bound_to_network_interfaces": "gatsby develop -p 8000 -H 0.0.0.0",
     "deploy": "gatsby build && gh-pages -d public -b gh-pages --cname thimble.dev",
     "start": "gatsby develop",
     "build": "gatsby build",
